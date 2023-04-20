@@ -1,0 +1,23 @@
+[name]
+Growup Bullet
+[skill_name]
+none
+[attck]
+300
+[speed]
+200
+[element]
+0
+[summon_count]
+0
+[pattern_delay]
+1801
+[animation_exist]
+0
+[animation_repeat]
+0
+[bullet_type]
+6
+[life_time]
+2
+[no_option]

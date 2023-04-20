@@ -1,0 +1,23 @@
+[name]
+Owl Blast
+[skill_name]
+owl_blast_small
+[attck]
+100
+[speed]
+100
+[element]
+0
+[summon_count]
+6
+[pattern_delay]
+2
+[animation_exist]
+1
+[animation_repeat]
+1
+[bullet_type]
+1
+[life_time]
+4
+[no_option]

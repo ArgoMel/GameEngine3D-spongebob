@@ -1,0 +1,1645 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="리소스 파일">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="01. Manager">
+      <UniqueIdentifier>{78c5f7e6-9f5a-4296-84b8-0863de3de17c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01. Manager\01. Device">
+      <UniqueIdentifier>{a759a85b-f665-4a02-96c7-ac7d651cf000}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01. Manager\02. Math">
+      <UniqueIdentifier>{d40f10a8-22a0-40fc-bc39-203e89fe155c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. Resource">
+      <UniqueIdentifier>{48d1297a-7163-45f8-aa30-b2122843c48c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. Resource\01. Mesh">
+      <UniqueIdentifier>{4805e51c-6959-4a62-a094-bd1890df7c4a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01. Manager\03. Ref">
+      <UniqueIdentifier>{ae7f3fdd-75c6-4c5e-b220-6cc585a50b09}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01. Manager\05. SharedPtr">
+      <UniqueIdentifier>{bf2a8feb-0325-435f-afb6-8940ac539f13}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01. Manager\04. Timer">
+      <UniqueIdentifier>{8d27bbc7-44c1-47e9-9d23-798ae56d260a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01. Manager\06. Path">
+      <UniqueIdentifier>{0b31e8f7-0e65-435e-8093-821679412e84}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. Resource\02. Shader">
+      <UniqueIdentifier>{1351a9e4-0b8b-4654-b69e-8334d094e26d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. Resource\02. Shader\01. HLSL">
+      <UniqueIdentifier>{f37e0d84-b9ce-4bfa-949f-b7baf5a11434}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. Resource\02. Shader\02. ShaderClass">
+      <UniqueIdentifier>{468a7bae-ad55-42db-b0b5-d33ef49e8c96}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. Resource\02. Shader\02. ShaderClass\01. Sprite">
+      <UniqueIdentifier>{7bb7a0bf-b528-482f-91bb-a51eb2bc3863}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03. Scene">
+      <UniqueIdentifier>{178a0e2f-5f4f-49f2-a713-c87f4e7b64d0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03. Scene\01. SceneInfo">
+      <UniqueIdentifier>{5023f246-57e1-4e2b-a540-8dc6de53530f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="04. GameObject">
+      <UniqueIdentifier>{d61f62ab-2533-4a9d-abdb-b9f5f9216808}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="05. Component">
+      <UniqueIdentifier>{0ed78fc9-272a-459d-bbe1-4311c870a571}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="05. Component\01. SceneComponent">
+      <UniqueIdentifier>{4c61618a-d911-46fc-a1af-6b809eab5953}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="05. Component\02. ObjectComponent">
+      <UniqueIdentifier>{5481dac0-a293-47fb-83be-9a86ebb6a124}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03. Scene\02. Resource">
+      <UniqueIdentifier>{80b173f5-2161-43a7-90d9-dbd274ef4327}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="06. Render">
+      <UniqueIdentifier>{30e09ded-f9f4-4773-a966-0e1dd7fe1584}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. Resource\02. Shader\03. ConstantBuffer">
+      <UniqueIdentifier>{40d4b5d1-e915-4f7c-a849-64d052e63666}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. Resource\02. Shader\03. ConstantBuffer\01. Transform">
+      <UniqueIdentifier>{393e4df2-df9f-4ab9-8e72-a4eaa80b7be5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01. Manager\07. Input">
+      <UniqueIdentifier>{274f5044-a7ba-4ab3-ae5d-52ad192a5cea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="05. Component\01. SceneComponent\02. Camera">
+      <UniqueIdentifier>{bdac5402-8626-40e9-aa39-950d4cd0d81d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03. Scene\03. Camera">
+      <UniqueIdentifier>{9fa47852-9131-4e11-bf9b-e6539bf1e233}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="05. Component\01. SceneComponent\03. Arm">
+      <UniqueIdentifier>{e0b1d708-6c43-4d31-a5b9-bc3814f07c25}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. Resource\03. Texture">
+      <UniqueIdentifier>{b345bd1f-78d4-441c-b8f3-7742b7b11222}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. Resource\04. Material">
+      <UniqueIdentifier>{e0ef4461-886c-4557-934a-b81d35f5ebb5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. Resource\02. Shader\03. ConstantBuffer\02. Material">
+      <UniqueIdentifier>{d61f737b-f8f9-4670-b73c-b9d79ce03c99}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="06. Render\01. RenderState">
+      <UniqueIdentifier>{243f00dd-4ab2-410e-aee1-06bfa37f312c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="07. Editor">
+      <UniqueIdentifier>{565795ad-9c12-4af5-b1ff-061e9d85b900}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="07. Editor\01. IMGUI">
+      <UniqueIdentifier>{bedaa4af-79e4-4b16-8e4c-aa865f7a0ba6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="07. Editor\02. Window">
+      <UniqueIdentifier>{ad73057f-425a-410c-919a-29e0b294e650}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="07. Editor\03. Widget">
+      <UniqueIdentifier>{73f90077-5cb4-4c99-ada9-218f5c710c41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. Resource\05. Animation">
+      <UniqueIdentifier>{1d92ed7b-5591-4281-bac2-4d705ed80157}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. Resource\05. Animation\01. 2D">
+      <UniqueIdentifier>{5cef779e-f545-4818-adde-9f3abfb354ff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. Resource\05. Animation\02. 3D">
+      <UniqueIdentifier>{7a66737d-b30d-446d-b83e-3988f45c86fd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="08. Animation">
+      <UniqueIdentifier>{e8dc691c-0e57-4777-bd01-ed069a5326e9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="08. Animation\01. 2D">
+      <UniqueIdentifier>{e72b210c-f003-47e7-8596-bc752444e17b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="08. Animation\02. 3D">
+      <UniqueIdentifier>{73d0efda-f508-4bca-9070-cca83d47cfd1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. Resource\02. Shader\03. ConstantBuffer\03. Animation2D">
+      <UniqueIdentifier>{13c8ff45-917a-473a-b9cc-194d4f9457a2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01. Manager\08. Collision">
+      <UniqueIdentifier>{87283aaa-38e4-4f4f-9f4d-88c3ccfad4d6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="05. Component\01. SceneComponent\04. Colider">
+      <UniqueIdentifier>{5fa5370e-494b-4ad5-a4e4-84fc2c70a51d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="05. Component\01. SceneComponent\04. Colider\01. 2D">
+      <UniqueIdentifier>{5f603ab1-2e3e-46f4-b945-33ad152307e0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="05. Component\01. SceneComponent\04. Colider\02. 3D">
+      <UniqueIdentifier>{45cfe4b1-4587-47f3-b5c8-12a52d197c48}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03. Scene\04. Collision">
+      <UniqueIdentifier>{11093b6f-b753-43ae-b743-f36a3e1760a0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. Resource\02. Shader\02. ShaderClass\02. Collider">
+      <UniqueIdentifier>{2c4450f1-66da-4d1b-b940-8c4fae8fcb58}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. Resource\02. Shader\03. ConstantBuffer\04. Collider">
+      <UniqueIdentifier>{03128638-dcdd-4013-936f-c9a6e915683f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="09. UI">
+      <UniqueIdentifier>{7e830316-1e89-4680-8b93-2c110fe7ef82}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="09. UI\01. Window">
+      <UniqueIdentifier>{6df4b898-3cd6-4e12-a4ff-78dc0a4f8000}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="09. UI\02. Widget">
+      <UniqueIdentifier>{12a262ef-ce81-4871-a7ae-890f94c1280e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03. Scene\05. Viewport">
+      <UniqueIdentifier>{5309291c-7055-4ba7-81d7-2323134cdd32}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. Resource\02. Shader\03. ConstantBuffer\05. UI">
+      <UniqueIdentifier>{20c634bc-cdef-48d2-835f-ba47e6820242}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. Resource\02. Shader\02. ShaderClass\03. UI">
+      <UniqueIdentifier>{d5887155-6bb5-4ca7-86eb-31f0fa9034f6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. Resource\06. Sound">
+      <UniqueIdentifier>{052d8e4b-e27c-485e-b28b-02817bde51bb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. Resource\06. Sound\01. FMOD">
+      <UniqueIdentifier>{6a5e0a6f-aa3f-4f1f-82b5-f7dcd0cd0a20}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01. Manager\09. Setting">
+      <UniqueIdentifier>{87341cb0-e717-4677-ac4d-368679545d49}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. Resource\07. Font">
+      <UniqueIdentifier>{3f5291d0-cd00-4b42-ab59-037107f434e1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01. Manager\10. Thread">
+      <UniqueIdentifier>{8ab16d18-a8b7-4479-b944-f9b8b53ee762}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. Resource\02. Shader\02. ShaderClass\04. TileMap">
+      <UniqueIdentifier>{9635177f-21ee-4ac2-8470-9e5639b4e48e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. Resource\02. Shader\03. ConstantBuffer\06. TileMap">
+      <UniqueIdentifier>{79198331-2cb3-407f-a3c0-b0ffe9ed8983}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. Resource\02. Shader\04. StructuredBuffer">
+      <UniqueIdentifier>{51947d5d-480b-41ad-a22c-9106cd04849a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01. Manager\10. Thread\01. Loading">
+      <UniqueIdentifier>{aee378f6-d919-4ab6-bb3e-bdd68c2a1560}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01. Manager\10. Thread\02. Navigation">
+      <UniqueIdentifier>{6d13232f-bfac-4f9e-9eef-d21abadddaf8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="05. Component\02. ObjectComponent\01. NavAgent">
+      <UniqueIdentifier>{7bc0a603-967f-408e-874b-f2049865dbc7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03. Scene\06. Navigation">
+      <UniqueIdentifier>{06612919-6e00-4eb1-b32a-8e8a03ffa621}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="05. Component\01. SceneComponent\05. RigidBody">
+      <UniqueIdentifier>{93057b43-00d6-422d-83a8-10abddfccada}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="05. Component\01. SceneComponent\01. Primitive">
+      <UniqueIdentifier>{226655e7-e8e0-461e-bd88-e527f6fe96e9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="05. Component\01. SceneComponent\01. Primitive\01. 2D">
+      <UniqueIdentifier>{a18d90d8-a2ad-4fb0-a679-c4ebe5369d3b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="05. Component\01. SceneComponent\01. Primitive\02. 3D">
+      <UniqueIdentifier>{9e6ff7cb-157d-4db0-9fe6-61365ec8a610}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. Resource\02. Shader\02. ShaderClass\06. Mesh">
+      <UniqueIdentifier>{c6d88fe2-c43c-4f7f-a1ad-44ff9fa58ef8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. Resource\02. Shader\02. ShaderClass\07. Debug">
+      <UniqueIdentifier>{b008f440-3f06-43c6-834c-cb4dda2a3c00}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. Resource\02. Shader\03. ConstantBuffer\07. Global">
+      <UniqueIdentifier>{4928bb74-47f8-4fa0-a463-f3b802eca934}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="05. Component\01. SceneComponent\06. Light">
+      <UniqueIdentifier>{2f227dd9-9164-4761-8928-0bee9d8c6926}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. Resource\02. Shader\03. ConstantBuffer\08. Light">
+      <UniqueIdentifier>{001d6c99-2032-4c1d-86a8-77618a686e58}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03. Scene\07. Light">
+      <UniqueIdentifier>{6a96cf0a-d110-4fbc-b777-2ea138a281e7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. Resource\02. Shader\02. ShaderClass\08. Light">
+      <UniqueIdentifier>{c21e9f18-aa9b-4a74-bf4f-044b4ab0777f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. Resource\02. Shader\02. ShaderClass\09. Screen">
+      <UniqueIdentifier>{76b636ac-bb5a-4977-b932-5d586f8e8362}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. Resource\02. Shader\02. ShaderClass\10. Deferred">
+      <UniqueIdentifier>{f99b2eef-500a-4191-85d4-f72a601bdde3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. Resource\02. Shader\03. ConstantBuffer\09. Animation3D">
+      <UniqueIdentifier>{3d062b8e-6dea-408f-86e7-c6acd060bf5e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. Resource\02. Shader\02. ShaderClass\11. Animation">
+      <UniqueIdentifier>{b231859e-bb85-4946-8470-6cd1758e0f9b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="06. Render\02. Instancing">
+      <UniqueIdentifier>{6382ea96-6851-4baf-b1e2-38fcf3ab1160}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. Resource\02. Shader\03. ConstantBuffer\10. Instancing">
+      <UniqueIdentifier>{81137fa8-fb4a-41cb-b44a-a51a9a7581f9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. Resource\02. Shader\02. ShaderClass\12. Sky">
+      <UniqueIdentifier>{b611c49b-c8a0-4fe4-aae1-284df85ccfbf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. Resource\02. Shader\02. ShaderClass\13. Terrain">
+      <UniqueIdentifier>{0b4844d0-ccc9-43cc-987d-0e74eb8b2000}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. Resource\02. Shader\03. ConstantBuffer\11. Terrain">
+      <UniqueIdentifier>{5ae842b2-711c-4bd7-9d6b-256147a45938}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03. Scene\06. Navigation\01. 2D">
+      <UniqueIdentifier>{6b99fcb3-27cd-4766-8e0f-5c17c07111c1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03. Scene\06. Navigation\02. 3D">
+      <UniqueIdentifier>{3aa0ca8f-7098-4c1e-a9d4-7a24f7b739d5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01. Manager\10. Thread\02. Navigation\01. 2D">
+      <UniqueIdentifier>{036caccd-b0e9-446d-a47f-2c798c803d07}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01. Manager\10. Thread\02. Navigation\02. 3D">
+      <UniqueIdentifier>{88d5933f-fe9f-40a4-b3ec-73fd20e4735c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. Resource\02. Shader\02. ShaderClass\14. Billboard">
+      <UniqueIdentifier>{020b1ab8-97e5-4abf-a960-73ea4045fa4f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. Resource\08. Particle">
+      <UniqueIdentifier>{cee0a075-1bc7-4f8a-ad5d-392175af53ae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. Resource\02. Shader\02. ShaderClass\15. Particle">
+      <UniqueIdentifier>{d8c49d51-bc1c-485d-b1ee-b4a79e99d2e0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. Resource\02. Shader\03. ConstantBuffer\12. Particle">
+      <UniqueIdentifier>{26d28d9f-8aa1-4da5-a5b7-168297d6fdb3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="05. Component\01. SceneComponent\01. Primitive\02. 3D\01. Mesh">
+      <UniqueIdentifier>{95b8b8f9-b2da-429f-8502-5833e766cc22}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="05. Component\01. SceneComponent\01. Primitive\02. 3D\02. Terrain">
+      <UniqueIdentifier>{a76074ea-c9ff-4897-98c1-35e54e50d180}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="05. Component\01. SceneComponent\01. Primitive\02. 3D\03. Billboard">
+      <UniqueIdentifier>{7c263390-924d-46a3-983f-a1e247783ef3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="05. Component\01. SceneComponent\01. Primitive\02. 3D\04. Particle">
+      <UniqueIdentifier>{d256ba4d-9f1e-429d-8ef7-de2ecf66fba7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="05. Component\01. SceneComponent\01. Primitive\02. 3D\05. Decal">
+      <UniqueIdentifier>{3e6545e9-acb0-41c5-b9da-cc855c45debe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. Resource\02. Shader\02. ShaderClass\16. Decal">
+      <UniqueIdentifier>{4cbfd357-e0ae-4252-a1bd-bb5df082b516}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. Resource\02. Shader\02. ShaderClass\05. FXAA">
+      <UniqueIdentifier>{4aad276b-1753-4272-b044-f380ea281071}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. Resource\02. Shader\02. ShaderClass\17. ShadowMap">
+      <UniqueIdentifier>{70f5fc44-f10b-40fd-a113-2ea4b4571ca7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. Resource\02. Shader\03. ConstantBuffer\13. Shadow">
+      <UniqueIdentifier>{7f7d9f81-6795-41c6-88a1-4b7177601a82}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01. Manager\11. Skill">
+      <UniqueIdentifier>{9f3f33c8-d667-4c58-9779-b2efadd4f9d6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. Resource\02. Shader\03. ConstantBuffer\14. FXAA">
+      <UniqueIdentifier>{4b9b5fb8-1ec6-46f4-9906-b837ce9a9cec}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03. Scene\08. CutScene">
+      <UniqueIdentifier>{82a58072-5ddf-4767-8303-d03b8358eb85}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="09. UI\03. RapidXml">
+      <UniqueIdentifier>{91852ffc-d5b1-4389-959c-095398dafdf8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. Resource\02. Shader\02. ShaderClass\18. Ocean">
+      <UniqueIdentifier>{4efb8db2-7a23-4a7e-8ff6-adc822923930}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="05. Component\01. SceneComponent\01. Primitive\02. 3D\06. Ocean">
+      <UniqueIdentifier>{e9cd98c2-980a-45c7-a765-0862b73caf55}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Engine.h">
+      <Filter>01. Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="Device.h">
+      <Filter>01. Manager\01. Device</Filter>
+    </ClInclude>
+    <ClInclude Include="EngineMath.h">
+      <Filter>01. Manager\02. Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Vector2.h">
+      <Filter>01. Manager\02. Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Vector3.h">
+      <Filter>01. Manager\02. Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Vector4.h">
+      <Filter>01. Manager\02. Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Matrix.h">
+      <Filter>01. Manager\02. Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\ResourceManager.h">
+      <Filter>02. Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="Ref.h">
+      <Filter>01. Manager\03. Ref</Filter>
+    </ClInclude>
+    <ClInclude Include="EngineInfo.h">
+      <Filter>리소스 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Flag.h">
+      <Filter>리소스 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="SharedPtr.h">
+      <Filter>01. Manager\05. SharedPtr</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\Mesh\MeshManager.h">
+      <Filter>02. Resource\01. Mesh</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\Mesh\Mesh.h">
+      <Filter>02. Resource\01. Mesh</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\Mesh\SpriteMesh.h">
+      <Filter>02. Resource\01. Mesh</Filter>
+    </ClInclude>
+    <ClInclude Include="Timer.h">
+      <Filter>01. Manager\04. Timer</Filter>
+    </ClInclude>
+    <ClInclude Include="PathManager.h">
+      <Filter>01. Manager\06. Path</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\Shader\Shader.h">
+      <Filter>02. Resource\02. Shader\02. ShaderClass</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\Shader\GraphicShader.h">
+      <Filter>02. Resource\02. Shader\02. ShaderClass</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\Shader\ComputeShader.h">
+      <Filter>02. Resource\02. Shader\02. ShaderClass</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\Shader\SpriteColorShader.h">
+      <Filter>02. Resource\02. Shader\02. ShaderClass\01. Sprite</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\Shader\ShaderManager.h">
+      <Filter>02. Resource\02. Shader</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\SceneManager.h">
+      <Filter>03. Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\Scene.h">
+      <Filter>03. Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\SceneInfo.h">
+      <Filter>03. Scene\01. SceneInfo</Filter>
+    </ClInclude>
+    <ClInclude Include="Component\Component.h">
+      <Filter>05. Component</Filter>
+    </ClInclude>
+    <ClInclude Include="Component\ObjectComponent.h">
+      <Filter>05. Component\02. ObjectComponent</Filter>
+    </ClInclude>
+    <ClInclude Include="Component\SceneComponent.h">
+      <Filter>05. Component\01. SceneComponent</Filter>
+    </ClInclude>
+    <ClInclude Include="Component\PrimitiveComponent.h">
+      <Filter>05. Component\01. SceneComponent\01. Primitive</Filter>
+    </ClInclude>
+    <ClInclude Include="Component\Transform.h">
+      <Filter>05. Component\01. SceneComponent</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\SceneResource.h">
+      <Filter>03. Scene\02. Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="Render\RenderManager.h">
+      <Filter>06. Render</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\Shader\ConstantBuffer.h">
+      <Filter>02. Resource\02. Shader\03. ConstantBuffer</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\Shader\ConstantBufferData.h">
+      <Filter>02. Resource\02. Shader\03. ConstantBuffer</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\Shader\TransformConstantBuffer.h">
+      <Filter>02. Resource\02. Shader\03. ConstantBuffer\01. Transform</Filter>
+    </ClInclude>
+    <ClInclude Include="Input.h">
+      <Filter>01. Manager\07. Input</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\CameraManager.h">
+      <Filter>03. Scene\03. Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="Component\CameraComponent.h">
+      <Filter>05. Component\01. SceneComponent\02. Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="Component\TargetArm.h">
+      <Filter>05. Component\01. SceneComponent\03. Arm</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\Texture\DirectXTex.h">
+      <Filter>02. Resource\03. Texture</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\Texture\TextureManager.h">
+      <Filter>02. Resource\03. Texture</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\Texture\Texture.h">
+      <Filter>02. Resource\03. Texture</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\Shader\SpriteShader.h">
+      <Filter>02. Resource\02. Shader\02. ShaderClass\01. Sprite</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\Material\Material.h">
+      <Filter>02. Resource\04. Material</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\Material\MaterialManager.h">
+      <Filter>02. Resource\04. Material</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\Shader\MaterialConstantBuffer.h">
+      <Filter>02. Resource\02. Shader\03. ConstantBuffer\02. Material</Filter>
+    </ClInclude>
+    <ClInclude Include="Render\RenderState.h">
+      <Filter>06. Render\01. RenderState</Filter>
+    </ClInclude>
+    <ClInclude Include="Render\BlendState.h">
+      <Filter>06. Render\01. RenderState</Filter>
+    </ClInclude>
+    <ClInclude Include="Render\RenderStateManager.h">
+      <Filter>06. Render\01. RenderState</Filter>
+    </ClInclude>
+    <ClInclude Include="Render\DepthStencilState.h">
+      <Filter>06. Render\01. RenderState</Filter>
+    </ClInclude>
+    <ClInclude Include="Editor\EditorGUIManager.h">
+      <Filter>07. Editor</Filter>
+    </ClInclude>
+    <ClInclude Include="Editor\EditorInfo.h">
+      <Filter>07. Editor</Filter>
+    </ClInclude>
+    <ClInclude Include="imstb_rectpack.h">
+      <Filter>07. Editor\01. IMGUI</Filter>
+    </ClInclude>
+    <ClInclude Include="imstb_textedit.h">
+      <Filter>07. Editor\01. IMGUI</Filter>
+    </ClInclude>
+    <ClInclude Include="imstb_truetype.h">
+      <Filter>07. Editor\01. IMGUI</Filter>
+    </ClInclude>
+    <ClInclude Include="imconfig.h">
+      <Filter>07. Editor\01. IMGUI</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui.h">
+      <Filter>07. Editor\01. IMGUI</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui_impl_dx11.h">
+      <Filter>07. Editor\01. IMGUI</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui_impl_win32.h">
+      <Filter>07. Editor\01. IMGUI</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui_internal.h">
+      <Filter>07. Editor\01. IMGUI</Filter>
+    </ClInclude>
+    <ClInclude Include="Editor\EditorWindow.h">
+      <Filter>07. Editor\02. Window</Filter>
+    </ClInclude>
+    <ClInclude Include="Editor\EditorWidget.h">
+      <Filter>07. Editor\03. Widget</Filter>
+    </ClInclude>
+    <ClInclude Include="Editor\EditorButton.h">
+      <Filter>07. Editor\03. Widget</Filter>
+    </ClInclude>
+    <ClInclude Include="Editor\EditorSameLine.h">
+      <Filter>07. Editor\03. Widget</Filter>
+    </ClInclude>
+    <ClInclude Include="Editor\EditorImage.h">
+      <Filter>07. Editor\03. Widget</Filter>
+    </ClInclude>
+    <ClInclude Include="Editor\EditorLabel.h">
+      <Filter>07. Editor\03. Widget</Filter>
+    </ClInclude>
+    <ClInclude Include="Editor\EditorText.h">
+      <Filter>07. Editor\03. Widget</Filter>
+    </ClInclude>
+    <ClInclude Include="Editor\EditorInputText.h">
+      <Filter>07. Editor\03. Widget</Filter>
+    </ClInclude>
+    <ClInclude Include="Editor\EditorCursorPos.h">
+      <Filter>07. Editor\03. Widget</Filter>
+    </ClInclude>
+    <ClInclude Include="Editor\EditorListBox.h">
+      <Filter>07. Editor\03. Widget</Filter>
+    </ClInclude>
+    <ClInclude Include="Editor\EditorComboBox.h">
+      <Filter>07. Editor\03. Widget</Filter>
+    </ClInclude>
+    <ClInclude Include="Editor\EditorTreeItem.h">
+      <Filter>07. Editor\03. Widget</Filter>
+    </ClInclude>
+    <ClInclude Include="Editor\EditorTree.h">
+      <Filter>07. Editor\03. Widget</Filter>
+    </ClInclude>
+    <ClInclude Include="GameObject\GameObject.h">
+      <Filter>04. GameObject</Filter>
+    </ClInclude>
+    <ClInclude Include="Editor\EditorSlider.h">
+      <Filter>07. Editor\03. Widget</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\Animation\AnimationSequence2D.h">
+      <Filter>02. Resource\05. Animation\01. 2D</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\Animation\AnimationManager.h">
+      <Filter>02. Resource\05. Animation</Filter>
+    </ClInclude>
+    <ClInclude Include="Animation\Animation2D.h">
+      <Filter>08. Animation\01. 2D</Filter>
+    </ClInclude>
+    <ClInclude Include="Animation\Animation2DData.h">
+      <Filter>08. Animation\01. 2D</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\Shader\Animation2DConstantBuffer.h">
+      <Filter>02. Resource\02. Shader\03. ConstantBuffer\03. Animation2D</Filter>
+    </ClInclude>
+    <ClInclude Include="Editor\EditorCheckBox.h">
+      <Filter>07. Editor\03. Widget</Filter>
+    </ClInclude>
+    <ClInclude Include="Editor\EditorSliderSingle.h">
+      <Filter>07. Editor\03. Widget</Filter>
+    </ClInclude>
+    <ClInclude Include="CollisionManager.h">
+      <Filter>01. Manager\08. Collision</Filter>
+    </ClInclude>
+    <ClInclude Include="Component\Collider.h">
+      <Filter>05. Component\01. SceneComponent\04. Colider</Filter>
+    </ClInclude>
+    <ClInclude Include="Component\Collider3D.h">
+      <Filter>05. Component\01. SceneComponent\04. Colider\02. 3D</Filter>
+    </ClInclude>
+    <ClInclude Include="Component\Collider2D.h">
+      <Filter>05. Component\01. SceneComponent\04. Colider\01. 2D</Filter>
+    </ClInclude>
+    <ClInclude Include="Component\ColliderBox2D.h">
+      <Filter>05. Component\01. SceneComponent\04. Colider\01. 2D</Filter>
+    </ClInclude>
+    <ClInclude Include="Component\ColliderOBB2D.h">
+      <Filter>05. Component\01. SceneComponent\04. Colider\01. 2D</Filter>
+    </ClInclude>
+    <ClInclude Include="Component\ColliderSphere2D.h">
+      <Filter>05. Component\01. SceneComponent\04. Colider\01. 2D</Filter>
+    </ClInclude>
+    <ClInclude Include="Component\ColliderPixel.h">
+      <Filter>05. Component\01. SceneComponent\04. Colider\01. 2D</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\SceneCollision.h">
+      <Filter>03. Scene\04. Collision</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\CollisionSection2D.h">
+      <Filter>03. Scene\04. Collision</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\CollisionSection3D.h">
+      <Filter>03. Scene\04. Collision</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\Shader\ColliderShader.h">
+      <Filter>02. Resource\02. Shader\02. ShaderClass\02. Collider</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\Shader\ColliderConstantBuffer.h">
+      <Filter>02. Resource\02. Shader\03. ConstantBuffer\04. Collider</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\Shader\ColliderImageShader.h">
+      <Filter>02. Resource\02. Shader\02. ShaderClass\02. Collider</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\UIWindow.h">
+      <Filter>09. UI\01. Window</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\UIWidget.h">
+      <Filter>09. UI\02. Widget</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\SceneViewport.h">
+      <Filter>03. Scene\05. Viewport</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\UIButton.h">
+      <Filter>09. UI\02. Widget</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\Shader\UIConstantBuffer.h">
+      <Filter>02. Resource\02. Shader\03. ConstantBuffer\05. UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\Shader\UIShader.h">
+      <Filter>02. Resource\02. Shader\02. ShaderClass\03. UI</Filter>
+    </ClInclude>
+    <ClInclude Include="fmod.h">
+      <Filter>02. Resource\06. Sound\01. FMOD</Filter>
+    </ClInclude>
+    <ClInclude Include="fmod.hpp">
+      <Filter>02. Resource\06. Sound\01. FMOD</Filter>
+    </ClInclude>
+    <ClInclude Include="fmod_codec.h">
+      <Filter>02. Resource\06. Sound\01. FMOD</Filter>
+    </ClInclude>
+    <ClInclude Include="fmod_common.h">
+      <Filter>02. Resource\06. Sound\01. FMOD</Filter>
+    </ClInclude>
+    <ClInclude Include="fmod_dsp.h">
+      <Filter>02. Resource\06. Sound\01. FMOD</Filter>
+    </ClInclude>
+    <ClInclude Include="fmod_dsp_effects.h">
+      <Filter>02. Resource\06. Sound\01. FMOD</Filter>
+    </ClInclude>
+    <ClInclude Include="fmod_errors.h">
+      <Filter>02. Resource\06. Sound\01. FMOD</Filter>
+    </ClInclude>
+    <ClInclude Include="fmod_output.h">
+      <Filter>02. Resource\06. Sound\01. FMOD</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\Sound\Sound.h">
+      <Filter>02. Resource\06. Sound</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\Sound\SoundManager.h">
+      <Filter>02. Resource\06. Sound</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\UIImage.h">
+      <Filter>09. UI\02. Widget</Filter>
+    </ClInclude>
+    <ClInclude Include="EngineSetting.h">
+      <Filter>01. Manager\09. Setting</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\Font\Font.h">
+      <Filter>02. Resource\07. Font</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\Font\FontCollection.h">
+      <Filter>02. Resource\07. Font</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\Font\FontManager.h">
+      <Filter>02. Resource\07. Font</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\UIText.h">
+      <Filter>09. UI\02. Widget</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\UIProgressBar.h">
+      <Filter>09. UI\02. Widget</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\Shader\UIProgressBarShader.h">
+      <Filter>02. Resource\02. Shader\02. ShaderClass\03. UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\Shader\UIProgressBarConstantBuffer.h">
+      <Filter>02. Resource\02. Shader\03. ConstantBuffer\05. UI</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\UINumber.h">
+      <Filter>09. UI\02. Widget</Filter>
+    </ClInclude>
+    <ClInclude Include="Editor\EditorGroup.h">
+      <Filter>07. Editor\03. Widget</Filter>
+    </ClInclude>
+    <ClInclude Include="Thread\Thread.h">
+      <Filter>01. Manager\10. Thread</Filter>
+    </ClInclude>
+    <ClInclude Include="Thread\ThreadManager.h">
+      <Filter>01. Manager\10. Thread</Filter>
+    </ClInclude>
+    <ClInclude Include="Thread\Sync.h">
+      <Filter>01. Manager\10. Thread</Filter>
+    </ClInclude>
+    <ClInclude Include="Thread\ThreadQueue.h">
+      <Filter>01. Manager\10. Thread</Filter>
+    </ClInclude>
+    <ClInclude Include="Thread\DataStream.h">
+      <Filter>01. Manager\10. Thread</Filter>
+    </ClInclude>
+    <ClInclude Include="Component\SpriteComponent.h">
+      <Filter>05. Component\01. SceneComponent\01. Primitive\01. 2D</Filter>
+    </ClInclude>
+    <ClInclude Include="Component\TileMapComponent.h">
+      <Filter>05. Component\01. SceneComponent\01. Primitive\01. 2D</Filter>
+    </ClInclude>
+    <ClInclude Include="Component\Tile.h">
+      <Filter>05. Component\01. SceneComponent\01. Primitive\01. 2D</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\Shader\TileMapShader.h">
+      <Filter>02. Resource\02. Shader\02. ShaderClass\04. TileMap</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\Shader\TileMapConstantBuffer.h">
+      <Filter>02. Resource\02. Shader\03. ConstantBuffer\06. TileMap</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\Shader\StructuredBuffer.h">
+      <Filter>02. Resource\02. Shader\04. StructuredBuffer</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\Shader\TileMapBackShader.h">
+      <Filter>02. Resource\02. Shader\02. ShaderClass\04. TileMap</Filter>
+    </ClInclude>
+    <ClInclude Include="Thread\LoadingThread.h">
+      <Filter>01. Manager\10. Thread\01. Loading</Filter>
+    </ClInclude>
+    <ClInclude Include="Thread\NavigationThread.h">
+      <Filter>01. Manager\10. Thread\02. Navigation</Filter>
+    </ClInclude>
+    <ClInclude Include="Component\NavigationAgent.h">
+      <Filter>05. Component\02. ObjectComponent\01. NavAgent</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\NavigationManager.h">
+      <Filter>03. Scene\06. Navigation</Filter>
+    </ClInclude>
+    <ClInclude Include="Component\RigidBody.h">
+      <Filter>05. Component\01. SceneComponent\05. RigidBody</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\Mesh\StaticMesh.h">
+      <Filter>02. Resource\01. Mesh</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\Mesh\AnimationMesh.h">
+      <Filter>02. Resource\01. Mesh</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\Mesh\FBXLoader.h">
+      <Filter>02. Resource\01. Mesh</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\Shader\MeshShader.h">
+      <Filter>02. Resource\02. Shader\02. ShaderClass\06. Mesh</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\Mesh\fbxsdk.h">
+      <Filter>02. Resource\01. Mesh</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\Texture\RenderTarget.h">
+      <Filter>02. Resource\03. Texture</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\Shader\DebugShader.h">
+      <Filter>02. Resource\02. Shader\02. ShaderClass\07. Debug</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\Shader\GlobalConstantBuffer.h">
+      <Filter>02. Resource\02. Shader\03. ConstantBuffer\07. Global</Filter>
+    </ClInclude>
+    <ClInclude Include="Component\LightComponent.h">
+      <Filter>05. Component\01. SceneComponent\06. Light</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\LightManager.h">
+      <Filter>03. Scene\07. Light</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\Shader\LightConstantBuffer.h">
+      <Filter>02. Resource\02. Shader\03. ConstantBuffer\08. Light</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\Shader\LightAccShader.h">
+      <Filter>02. Resource\02. Shader\02. ShaderClass\08. Light</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\Shader\ScreenShader.h">
+      <Filter>02. Resource\02. Shader\02. ShaderClass\09. Screen</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\Shader\DeferredRenderShader.h">
+      <Filter>02. Resource\02. Shader\02. ShaderClass\10. Deferred</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\Animation\Skeleton.h">
+      <Filter>02. Resource\05. Animation\02. 3D</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\Animation\AnimationSequence.h">
+      <Filter>02. Resource\05. Animation\02. 3D</Filter>
+    </ClInclude>
+    <ClInclude Include="Animation\Animation.h">
+      <Filter>08. Animation\02. 3D</Filter>
+    </ClInclude>
+    <ClInclude Include="Animation\AnimationData.h">
+      <Filter>08. Animation\02. 3D</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\Shader\AnimationUpdateConstantBuffer.h">
+      <Filter>02. Resource\02. Shader\03. ConstantBuffer\09. Animation3D</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\Shader\AnimationUpdateShader.h">
+      <Filter>02. Resource\02. Shader\02. ShaderClass\11. Animation</Filter>
+    </ClInclude>
+    <ClInclude Include="Render\RenderInstancing.h">
+      <Filter>06. Render\02. Instancing</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\Shader\MeshInstancingShader.h">
+      <Filter>02. Resource\02. Shader\02. ShaderClass\06. Mesh</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\Shader\InstancingConstantBuffer.h">
+      <Filter>02. Resource\02. Shader\03. ConstantBuffer\10. Instancing</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\Animation\SkeletonSocket.h">
+      <Filter>02. Resource\05. Animation\02. 3D</Filter>
+    </ClInclude>
+    <ClInclude Include="GameObject\SkySphere.h">
+      <Filter>04. GameObject</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\Shader\SkyShader.h">
+      <Filter>02. Resource\02. Shader\02. ShaderClass\12. Sky</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\Shader\TerrainShader.h">
+      <Filter>02. Resource\02. Shader\02. ShaderClass\13. Terrain</Filter>
+    </ClInclude>
+    <ClInclude Include="Render\RasterizerState.h">
+      <Filter>06. Render\01. RenderState</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\Shader\TerrainConstantBuffer.h">
+      <Filter>02. Resource\02. Shader\03. ConstantBuffer\11. Terrain</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\NavigationManager2D.h">
+      <Filter>03. Scene\06. Navigation\01. 2D</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\NavigationManager3D.h">
+      <Filter>03. Scene\06. Navigation\02. 3D</Filter>
+    </ClInclude>
+    <ClInclude Include="Thread\Navigation.h">
+      <Filter>01. Manager\10. Thread\02. Navigation\01. 2D</Filter>
+    </ClInclude>
+    <ClInclude Include="Thread\Navigation2DThread.h">
+      <Filter>01. Manager\10. Thread\02. Navigation\01. 2D</Filter>
+    </ClInclude>
+    <ClInclude Include="Thread\Navigation3D.h">
+      <Filter>01. Manager\10. Thread\02. Navigation\02. 3D</Filter>
+    </ClInclude>
+    <ClInclude Include="Thread\Navigation3DThread.h">
+      <Filter>01. Manager\10. Thread\02. Navigation\02. 3D</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\NavigationMesh.h">
+      <Filter>03. Scene\06. Navigation\02. 3D</Filter>
+    </ClInclude>
+    <ClInclude Include="Component\NavigationAgent3D.h">
+      <Filter>05. Component\02. ObjectComponent\01. NavAgent</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\Shader\BillboardShader.h">
+      <Filter>02. Resource\02. Shader\02. ShaderClass\14. Billboard</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\Particle\Particle.h">
+      <Filter>02. Resource\08. Particle</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\Particle\ParticleManager.h">
+      <Filter>02. Resource\08. Particle</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\Shader\ParticleRenderShader.h">
+      <Filter>02. Resource\02. Shader\02. ShaderClass\15. Particle</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\Shader\ParticleUpdateShader.h">
+      <Filter>02. Resource\02. Shader\02. ShaderClass\15. Particle</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\Shader\ParticleConstantBuffer.h">
+      <Filter>02. Resource\02. Shader\03. ConstantBuffer\12. Particle</Filter>
+    </ClInclude>
+    <ClInclude Include="ImGuizmo.h">
+      <Filter>07. Editor\01. IMGUI</Filter>
+    </ClInclude>
+    <ClInclude Include="Editor\EditorGizmo.h">
+      <Filter>07. Editor\03. Widget</Filter>
+    </ClInclude>
+    <ClInclude Include="Component\AnimationMeshComponent.h">
+      <Filter>05. Component\01. SceneComponent\01. Primitive\02. 3D\01. Mesh</Filter>
+    </ClInclude>
+    <ClInclude Include="Component\StaticMeshComponent.h">
+      <Filter>05. Component\01. SceneComponent\01. Primitive\02. 3D\01. Mesh</Filter>
+    </ClInclude>
+    <ClInclude Include="Component\BillboardComponent.h">
+      <Filter>05. Component\01. SceneComponent\01. Primitive\02. 3D\03. Billboard</Filter>
+    </ClInclude>
+    <ClInclude Include="Component\TerrainComponent.h">
+      <Filter>05. Component\01. SceneComponent\01. Primitive\02. 3D\02. Terrain</Filter>
+    </ClInclude>
+    <ClInclude Include="Component\ParticleComponent.h">
+      <Filter>05. Component\01. SceneComponent\01. Primitive\02. 3D\04. Particle</Filter>
+    </ClInclude>
+    <ClInclude Include="Component\DecalComponent.h">
+      <Filter>05. Component\01. SceneComponent\01. Primitive\02. 3D\05. Decal</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\Shader\DecalShader.h">
+      <Filter>02. Resource\02. Shader\02. ShaderClass\16. Decal</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\Shader\DecalDebugShader.h">
+      <Filter>02. Resource\02. Shader\02. ShaderClass\16. Decal</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>리소스 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\Shader\FXAAShader.h">
+      <Filter>02. Resource\02. Shader\02. ShaderClass\05. FXAA</Filter>
+    </ClInclude>
+    <ClInclude Include="Component\ColliderSphere3D.h">
+      <Filter>05. Component\01. SceneComponent\04. Colider\02. 3D</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\Shader\ShadowMapInstancingShader.h">
+      <Filter>02. Resource\02. Shader\02. ShaderClass\17. ShadowMap</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\Shader\ShadowMapShader.h">
+      <Filter>02. Resource\02. Shader\02. ShaderClass\17. ShadowMap</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\Shader\ShadowMapStaticInstancingShader.h">
+      <Filter>02. Resource\02. Shader\02. ShaderClass\17. ShadowMap</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\Shader\ShadowMapStaticShader.h">
+      <Filter>02. Resource\02. Shader\02. ShaderClass\17. ShadowMap</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\Shader\ShadowConstantBuffer.h">
+      <Filter>02. Resource\02. Shader\03. ConstantBuffer\13. Shadow</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\Shader\LightCelShader.h">
+      <Filter>02. Resource\02. Shader\02. ShaderClass\08. Light</Filter>
+    </ClInclude>
+    <ClInclude Include="Component\ColliderCube.h">
+      <Filter>05. Component\01. SceneComponent\04. Colider\02. 3D</Filter>
+    </ClInclude>
+    <ClInclude Include="Component\ColliderOBB3D.h">
+      <Filter>05. Component\01. SceneComponent\04. Colider\02. 3D</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\UITextButton.h">
+      <Filter>09. UI\02. Widget</Filter>
+    </ClInclude>
+    <ClInclude Include="SkillManager.h">
+      <Filter>01. Manager\11. Skill</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\Shader\FXAAConstantBuffer.h">
+      <Filter>02. Resource\02. Shader\03. ConstantBuffer\14. FXAA</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Bin\Shader\Fxaa3_11.h">
+      <Filter>02. Resource\02. Shader\01. HLSL</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\Shader\MSShader.h">
+      <Filter>02. Resource\02. Shader\02. ShaderClass\05. FXAA</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\CutScene.h">
+      <Filter>03. Scene\08. CutScene</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\RapidXml\CXmlParser.h">
+      <Filter>09. UI\03. RapidXml</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\RapidXml\rapidxml.hpp">
+      <Filter>09. UI\03. RapidXml</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\RapidXml\rapidxml_iterators.hpp">
+      <Filter>09. UI\03. RapidXml</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\RapidXml\rapidxml_print.hpp">
+      <Filter>09. UI\03. RapidXml</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\RapidXml\rapidxml_utils.hpp">
+      <Filter>09. UI\03. RapidXml</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource\Shader\OceanShader.h">
+      <Filter>02. Resource\02. Shader\02. ShaderClass\18. Ocean</Filter>
+    </ClInclude>
+    <ClInclude Include="Component\OceanComponent.h">
+      <Filter>05. Component\01. SceneComponent\01. Primitive\02. 3D\06. Ocean</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Engine.cpp">
+      <Filter>01. Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="Device.cpp">
+      <Filter>01. Manager\01. Device</Filter>
+    </ClCompile>
+    <ClCompile Include="Vector2.cpp">
+      <Filter>01. Manager\02. Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Vector3.cpp">
+      <Filter>01. Manager\02. Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Vector4.cpp">
+      <Filter>01. Manager\02. Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Matrix.cpp">
+      <Filter>01. Manager\02. Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Resource\ResourceManager.cpp">
+      <Filter>02. Resource</Filter>
+    </ClCompile>
+    <ClCompile Include="Ref.cpp">
+      <Filter>01. Manager\03. Ref</Filter>
+    </ClCompile>
+    <ClCompile Include="Resource\Mesh\MeshManager.cpp">
+      <Filter>02. Resource\01. Mesh</Filter>
+    </ClCompile>
+    <ClCompile Include="Resource\Mesh\Mesh.cpp">
+      <Filter>02. Resource\01. Mesh</Filter>
+    </ClCompile>
+    <ClCompile Include="Resource\Mesh\SpriteMesh.cpp">
+      <Filter>02. Resource\01. Mesh</Filter>
+    </ClCompile>
+    <ClCompile Include="Timer.cpp">
+      <Filter>01. Manager\04. Timer</Filter>
+    </ClCompile>
+    <ClCompile Include="PathManager.cpp">
+      <Filter>01. Manager\06. Path</Filter>
+    </ClCompile>
+    <ClCompile Include="Resource\Shader\Shader.cpp">
+      <Filter>02. Resource\02. Shader\02. ShaderClass</Filter>
+    </ClCompile>
+    <ClCompile Include="Resource\Shader\GraphicShader.cpp">
+      <Filter>02. Resource\02. Shader\02. ShaderClass</Filter>
+    </ClCompile>
+    <ClCompile Include="Resource\Shader\ComputeShader.cpp">
+      <Filter>02. Resource\02. Shader\02. ShaderClass</Filter>
+    </ClCompile>
+    <ClCompile Include="Resource\Shader\SpriteColorShader.cpp">
+      <Filter>02. Resource\02. Shader\02. ShaderClass\01. Sprite</Filter>
+    </ClCompile>
+    <ClCompile Include="Resource\Shader\ShaderManager.cpp">
+      <Filter>02. Resource\02. Shader</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\Scene.cpp">
+      <Filter>03. Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\SceneManager.cpp">
+      <Filter>03. Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\SceneInfo.cpp">
+      <Filter>03. Scene\01. SceneInfo</Filter>
+    </ClCompile>
+    <ClCompile Include="Component\Component.cpp">
+      <Filter>05. Component</Filter>
+    </ClCompile>
+    <ClCompile Include="Component\ObjectComponent.cpp">
+      <Filter>05. Component\02. ObjectComponent</Filter>
+    </ClCompile>
+    <ClCompile Include="Component\SceneComponent.cpp">
+      <Filter>05. Component\01. SceneComponent</Filter>
+    </ClCompile>
+    <ClCompile Include="Component\PrimitiveComponent.cpp">
+      <Filter>05. Component\01. SceneComponent\01. Primitive</Filter>
+    </ClCompile>
+    <ClCompile Include="Component\Transform.cpp">
+      <Filter>05. Component\01. SceneComponent</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\SceneResource.cpp">
+      <Filter>03. Scene\02. Resource</Filter>
+    </ClCompile>
+    <ClCompile Include="Render\RenderManager.cpp">
+      <Filter>06. Render</Filter>
+    </ClCompile>
+    <ClCompile Include="Resource\Shader\ConstantBuffer.cpp">
+      <Filter>02. Resource\02. Shader\03. ConstantBuffer</Filter>
+    </ClCompile>
+    <ClCompile Include="Resource\Shader\ConstantBufferData.cpp">
+      <Filter>02. Resource\02. Shader\03. ConstantBuffer</Filter>
+    </ClCompile>
+    <ClCompile Include="Resource\Shader\TransformConstantBuffer.cpp">
+      <Filter>02. Resource\02. Shader\03. ConstantBuffer\01. Transform</Filter>
+    </ClCompile>
+    <ClCompile Include="Input.cpp">
+      <Filter>01. Manager\07. Input</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\CameraManager.cpp">
+      <Filter>03. Scene\03. Camera</Filter>
+    </ClCompile>
+    <ClCompile Include="Component\CameraComponent.cpp">
+      <Filter>05. Component\01. SceneComponent\02. Camera</Filter>
+    </ClCompile>
+    <ClCompile Include="Component\TargetArm.cpp">
+      <Filter>05. Component\01. SceneComponent\03. Arm</Filter>
+    </ClCompile>
+    <ClCompile Include="Resource\Texture\TextureManager.cpp">
+      <Filter>02. Resource\03. Texture</Filter>
+    </ClCompile>
+    <ClCompile Include="Resource\Texture\Texture.cpp">
+      <Filter>02. Resource\03. Texture</Filter>
+    </ClCompile>
+    <ClCompile Include="Resource\Shader\SpriteShader.cpp">
+      <Filter>02. Resource\02. Shader\02. ShaderClass\01. Sprite</Filter>
+    </ClCompile>
+    <ClCompile Include="Resource\Material\Material.cpp">
+      <Filter>02. Resource\04. Material</Filter>
+    </ClCompile>
+    <ClCompile Include="Resource\Material\MaterialManager.cpp">
+      <Filter>02. Resource\04. Material</Filter>
+    </ClCompile>
+    <ClCompile Include="Resource\Shader\MaterialConstantBuffer.cpp">
+      <Filter>02. Resource\02. Shader\03. ConstantBuffer\02. Material</Filter>
+    </ClCompile>
+    <ClCompile Include="Render\RenderState.cpp">
+      <Filter>06. Render\01. RenderState</Filter>
+    </ClCompile>
+    <ClCompile Include="Render\BlendState.cpp">
+      <Filter>06. Render\01. RenderState</Filter>
+    </ClCompile>
+    <ClCompile Include="Render\RenderStateManager.cpp">
+      <Filter>06. Render\01. RenderState</Filter>
+    </ClCompile>
+    <ClCompile Include="Render\DepthStencilState.cpp">
+      <Filter>06. Render\01. RenderState</Filter>
+    </ClCompile>
+    <ClCompile Include="Editor\EditorGUIManager.cpp">
+      <Filter>07. Editor</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui.cpp">
+      <Filter>07. Editor\01. IMGUI</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui_demo.cpp">
+      <Filter>07. Editor\01. IMGUI</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui_draw.cpp">
+      <Filter>07. Editor\01. IMGUI</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui_impl_dx11.cpp">
+      <Filter>07. Editor\01. IMGUI</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui_impl_win32.cpp">
+      <Filter>07. Editor\01. IMGUI</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui_tables.cpp">
+      <Filter>07. Editor\01. IMGUI</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui_widgets.cpp">
+      <Filter>07. Editor\01. IMGUI</Filter>
+    </ClCompile>
+    <ClCompile Include="Editor\EditorWindow.cpp">
+      <Filter>07. Editor\02. Window</Filter>
+    </ClCompile>
+    <ClCompile Include="Editor\EditorWidget.cpp">
+      <Filter>07. Editor\03. Widget</Filter>
+    </ClCompile>
+    <ClCompile Include="Editor\EditorButton.cpp">
+      <Filter>07. Editor\03. Widget</Filter>
+    </ClCompile>
+    <ClCompile Include="Editor\EditorSameLine.cpp">
+      <Filter>07. Editor\03. Widget</Filter>
+    </ClCompile>
+    <ClCompile Include="Editor\EditorImage.cpp">
+      <Filter>07. Editor\03. Widget</Filter>
+    </ClCompile>
+    <ClCompile Include="Editor\EditorLabel.cpp">
+      <Filter>07. Editor\03. Widget</Filter>
+    </ClCompile>
+    <ClCompile Include="Editor\EditorText.cpp">
+      <Filter>07. Editor\03. Widget</Filter>
+    </ClCompile>
+    <ClCompile Include="Editor\EditorInputText.cpp">
+      <Filter>07. Editor\03. Widget</Filter>
+    </ClCompile>
+    <ClCompile Include="Editor\EditorCursorPos.cpp">
+      <Filter>07. Editor\03. Widget</Filter>
+    </ClCompile>
+    <ClCompile Include="Editor\EditorListBox.cpp">
+      <Filter>07. Editor\03. Widget</Filter>
+    </ClCompile>
+    <ClCompile Include="Editor\EditorComboBox.cpp">
+      <Filter>07. Editor\03. Widget</Filter>
+    </ClCompile>
+    <ClCompile Include="GameObject\GameObject.cpp">
+      <Filter>04. GameObject</Filter>
+    </ClCompile>
+    <ClCompile Include="Editor\EditorSlider.cpp">
+      <Filter>07. Editor\03. Widget</Filter>
+    </ClCompile>
+    <ClCompile Include="Resource\Animation\AnimationSequence2D.cpp">
+      <Filter>02. Resource\05. Animation\01. 2D</Filter>
+    </ClCompile>
+    <ClCompile Include="Resource\Animation\AnimationManager.cpp">
+      <Filter>02. Resource\05. Animation</Filter>
+    </ClCompile>
+    <ClCompile Include="Animation\Animation2D.cpp">
+      <Filter>08. Animation\01. 2D</Filter>
+    </ClCompile>
+    <ClCompile Include="Animation\Animation2DData.cpp">
+      <Filter>08. Animation\01. 2D</Filter>
+    </ClCompile>
+    <ClCompile Include="Resource\Shader\Animation2DConstantBuffer.cpp">
+      <Filter>02. Resource\02. Shader\03. ConstantBuffer\03. Animation2D</Filter>
+    </ClCompile>
+    <ClCompile Include="Editor\EditorCheckBox.cpp">
+      <Filter>07. Editor\03. Widget</Filter>
+    </ClCompile>
+    <ClCompile Include="Editor\EditorSliderSingle.cpp">
+      <Filter>07. Editor\03. Widget</Filter>
+    </ClCompile>
+    <ClCompile Include="CollisionManager.cpp">
+      <Filter>01. Manager\08. Collision</Filter>
+    </ClCompile>
+    <ClCompile Include="Component\Collider.cpp">
+      <Filter>05. Component\01. SceneComponent\04. Colider</Filter>
+    </ClCompile>
+    <ClCompile Include="Component\Collider3D.cpp">
+      <Filter>05. Component\01. SceneComponent\04. Colider\02. 3D</Filter>
+    </ClCompile>
+    <ClCompile Include="Component\Collider2D.cpp">
+      <Filter>05. Component\01. SceneComponent\04. Colider\01. 2D</Filter>
+    </ClCompile>
+    <ClCompile Include="Component\ColliderBox2D.cpp">
+      <Filter>05. Component\01. SceneComponent\04. Colider\01. 2D</Filter>
+    </ClCompile>
+    <ClCompile Include="Component\ColliderOBB2D.cpp">
+      <Filter>05. Component\01. SceneComponent\04. Colider\01. 2D</Filter>
+    </ClCompile>
+    <ClCompile Include="Component\ColliderSphere2D.cpp">
+      <Filter>05. Component\01. SceneComponent\04. Colider\01. 2D</Filter>
+    </ClCompile>
+    <ClCompile Include="Component\ColliderPixel.cpp">
+      <Filter>05. Component\01. SceneComponent\04. Colider\01. 2D</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\SceneCollision.cpp">
+      <Filter>03. Scene\04. Collision</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\CollisionSection2D.cpp">
+      <Filter>03. Scene\04. Collision</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\CollisionSection3D.cpp">
+      <Filter>03. Scene\04. Collision</Filter>
+    </ClCompile>
+    <ClCompile Include="Resource\Shader\ColliderShader.cpp">
+      <Filter>02. Resource\02. Shader\02. ShaderClass\02. Collider</Filter>
+    </ClCompile>
+    <ClCompile Include="Resource\Shader\ColliderConstantBuffer.cpp">
+      <Filter>02. Resource\02. Shader\03. ConstantBuffer\04. Collider</Filter>
+    </ClCompile>
+    <ClCompile Include="Resource\Shader\ColliderImageShader.cpp">
+      <Filter>02. Resource\02. Shader\02. ShaderClass\02. Collider</Filter>
+    </ClCompile>
+    <ClCompile Include="UI\UIWindow.cpp">
+      <Filter>09. UI\01. Window</Filter>
+    </ClCompile>
+    <ClCompile Include="UI\UIWidget.cpp">
+      <Filter>09. UI\02. Widget</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\SceneViewport.cpp">
+      <Filter>03. Scene\05. Viewport</Filter>
+    </ClCompile>
+    <ClCompile Include="UI\UIButton.cpp">
+      <Filter>09. UI\02. Widget</Filter>
+    </ClCompile>
+    <ClCompile Include="Resource\Shader\UIConstantBuffer.cpp">
+      <Filter>02. Resource\02. Shader\03. ConstantBuffer\05. UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Resource\Shader\UIShader.cpp">
+      <Filter>02. Resource\02. Shader\02. ShaderClass\03. UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Resource\Sound\Sound.cpp">
+      <Filter>02. Resource\06. Sound</Filter>
+    </ClCompile>
+    <ClCompile Include="Resource\Sound\SoundManager.cpp">
+      <Filter>02. Resource\06. Sound</Filter>
+    </ClCompile>
+    <ClCompile Include="UI\UIImage.cpp">
+      <Filter>09. UI\02. Widget</Filter>
+    </ClCompile>
+    <ClCompile Include="EngineSetting.cpp">
+      <Filter>01. Manager\09. Setting</Filter>
+    </ClCompile>
+    <ClCompile Include="Resource\Font\Font.cpp">
+      <Filter>02. Resource\07. Font</Filter>
+    </ClCompile>
+    <ClCompile Include="Resource\Font\FontCollection.cpp">
+      <Filter>02. Resource\07. Font</Filter>
+    </ClCompile>
+    <ClCompile Include="Resource\Font\FontManager.cpp">
+      <Filter>02. Resource\07. Font</Filter>
+    </ClCompile>
+    <ClCompile Include="UI\UIText.cpp">
+      <Filter>09. UI\02. Widget</Filter>
+    </ClCompile>
+    <ClCompile Include="UI\UIProgressBar.cpp">
+      <Filter>09. UI\02. Widget</Filter>
+    </ClCompile>
+    <ClCompile Include="Resource\Shader\UIProgressBarShader.cpp">
+      <Filter>02. Resource\02. Shader\02. ShaderClass\03. UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Resource\Shader\UIProgressBarConstantBuffer.cpp">
+      <Filter>02. Resource\02. Shader\03. ConstantBuffer\05. UI</Filter>
+    </ClCompile>
+    <ClCompile Include="UI\UINumber.cpp">
+      <Filter>09. UI\02. Widget</Filter>
+    </ClCompile>
+    <ClCompile Include="Editor\EditorGroup.cpp">
+      <Filter>07. Editor\03. Widget</Filter>
+    </ClCompile>
+    <ClCompile Include="Thread\Thread.cpp">
+      <Filter>01. Manager\10. Thread</Filter>
+    </ClCompile>
+    <ClCompile Include="Thread\ThreadManager.cpp">
+      <Filter>01. Manager\10. Thread</Filter>
+    </ClCompile>
+    <ClCompile Include="Thread\ThreadQueue.cpp">
+      <Filter>01. Manager\10. Thread</Filter>
+    </ClCompile>
+    <ClCompile Include="Thread\DataStream.cpp">
+      <Filter>01. Manager\10. Thread</Filter>
+    </ClCompile>
+    <ClCompile Include="Component\SpriteComponent.cpp">
+      <Filter>05. Component\01. SceneComponent\01. Primitive\01. 2D</Filter>
+    </ClCompile>
+    <ClCompile Include="Component\TileMapComponent.cpp">
+      <Filter>05. Component\01. SceneComponent\01. Primitive\01. 2D</Filter>
+    </ClCompile>
+    <ClCompile Include="Component\Tile.cpp">
+      <Filter>05. Component\01. SceneComponent\01. Primitive\01. 2D</Filter>
+    </ClCompile>
+    <ClCompile Include="Resource\Shader\TileMapShader.cpp">
+      <Filter>02. Resource\02. Shader\02. ShaderClass\04. TileMap</Filter>
+    </ClCompile>
+    <ClCompile Include="Resource\Shader\TileMapConstantBuffer.cpp">
+      <Filter>02. Resource\02. Shader\03. ConstantBuffer\06. TileMap</Filter>
+    </ClCompile>
+    <ClCompile Include="Resource\Shader\StructuredBuffer.cpp">
+      <Filter>02. Resource\02. Shader\04. StructuredBuffer</Filter>
+    </ClCompile>
+    <ClCompile Include="Resource\Shader\TileMapBackShader.cpp">
+      <Filter>02. Resource\02. Shader\02. ShaderClass\04. TileMap</Filter>
+    </ClCompile>
+    <ClCompile Include="Thread\LoadingThread.cpp">
+      <Filter>01. Manager\10. Thread\01. Loading</Filter>
+    </ClCompile>
+    <ClCompile Include="Thread\NavigationThread.cpp">
+      <Filter>01. Manager\10. Thread\02. Navigation</Filter>
+    </ClCompile>
+    <ClCompile Include="Component\NavigationAgent.cpp">
+      <Filter>05. Component\02. ObjectComponent\01. NavAgent</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\NavigationManager.cpp">
+      <Filter>03. Scene\06. Navigation</Filter>
+    </ClCompile>
+    <ClCompile Include="Component\RigidBody.cpp">
+      <Filter>05. Component\01. SceneComponent\05. RigidBody</Filter>
+    </ClCompile>
+    <ClCompile Include="Resource\Mesh\StaticMesh.cpp">
+      <Filter>02. Resource\01. Mesh</Filter>
+    </ClCompile>
+    <ClCompile Include="Resource\Mesh\AnimationMesh.cpp">
+      <Filter>02. Resource\01. Mesh</Filter>
+    </ClCompile>
+    <ClCompile Include="Resource\Mesh\FBXLoader.cpp">
+      <Filter>02. Resource\01. Mesh</Filter>
+    </ClCompile>
+    <ClCompile Include="Resource\Shader\MeshShader.cpp">
+      <Filter>02. Resource\02. Shader\02. ShaderClass\06. Mesh</Filter>
+    </ClCompile>
+    <ClCompile Include="Resource\Texture\RenderTarget.cpp">
+      <Filter>02. Resource\03. Texture</Filter>
+    </ClCompile>
+    <ClCompile Include="Resource\Shader\DebugShader.cpp">
+      <Filter>02. Resource\02. Shader\02. ShaderClass\07. Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="Resource\Shader\GlobalConstantBuffer.cpp">
+      <Filter>02. Resource\02. Shader\03. ConstantBuffer\07. Global</Filter>
+    </ClCompile>
+    <ClCompile Include="Component\LightComponent.cpp">
+      <Filter>05. Component\01. SceneComponent\06. Light</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\LightManager.cpp">
+      <Filter>03. Scene\07. Light</Filter>
+    </ClCompile>
+    <ClCompile Include="Resource\Shader\LightConstantBuffer.cpp">
+      <Filter>02. Resource\02. Shader\03. ConstantBuffer\08. Light</Filter>
+    </ClCompile>
+    <ClCompile Include="Resource\Shader\LightAccShader.cpp">
+      <Filter>02. Resource\02. Shader\02. ShaderClass\08. Light</Filter>
+    </ClCompile>
+    <ClCompile Include="Resource\Shader\ScreenShader.cpp">
+      <Filter>02. Resource\02. Shader\02. ShaderClass\09. Screen</Filter>
+    </ClCompile>
+    <ClCompile Include="Resource\Shader\DeferredRenderShader.cpp">
+      <Filter>02. Resource\02. Shader\02. ShaderClass\10. Deferred</Filter>
+    </ClCompile>
+    <ClCompile Include="Resource\Animation\Skeleton.cpp">
+      <Filter>02. Resource\05. Animation\02. 3D</Filter>
+    </ClCompile>
+    <ClCompile Include="Resource\Animation\AnimationSequence.cpp">
+      <Filter>02. Resource\05. Animation\02. 3D</Filter>
+    </ClCompile>
+    <ClCompile Include="Animation\Animation.cpp">
+      <Filter>08. Animation\02. 3D</Filter>
+    </ClCompile>
+    <ClCompile Include="Animation\AnimationData.cpp">
+      <Filter>08. Animation\02. 3D</Filter>
+    </ClCompile>
+    <ClCompile Include="Resource\Shader\AnimationUpdateConstantBuffer.cpp">
+      <Filter>02. Resource\02. Shader\03. ConstantBuffer\09. Animation3D</Filter>
+    </ClCompile>
+    <ClCompile Include="Resource\Shader\AnimationUpdateShader.cpp">
+      <Filter>02. Resource\02. Shader\02. ShaderClass\11. Animation</Filter>
+    </ClCompile>
+    <ClCompile Include="Render\RenderInstancing.cpp">
+      <Filter>06. Render\02. Instancing</Filter>
+    </ClCompile>
+    <ClCompile Include="Resource\Shader\MeshInstancingShader.cpp">
+      <Filter>02. Resource\02. Shader\02. ShaderClass\06. Mesh</Filter>
+    </ClCompile>
+    <ClCompile Include="Resource\Shader\InstancingConstantBuffer.cpp">
+      <Filter>02. Resource\02. Shader\03. ConstantBuffer\10. Instancing</Filter>
+    </ClCompile>
+    <ClCompile Include="Resource\Animation\SkeletonSocket.cpp">
+      <Filter>02. Resource\05. Animation\02. 3D</Filter>
+    </ClCompile>
+    <ClCompile Include="GameObject\SkySphere.cpp">
+      <Filter>04. GameObject</Filter>
+    </ClCompile>
+    <ClCompile Include="Resource\Shader\SkyShader.cpp">
+      <Filter>02. Resource\02. Shader\02. ShaderClass\12. Sky</Filter>
+    </ClCompile>
+    <ClCompile Include="Resource\Shader\TerrainShader.cpp">
+      <Filter>02. Resource\02. Shader\02. ShaderClass\13. Terrain</Filter>
+    </ClCompile>
+    <ClCompile Include="Render\RasterizerState.cpp">
+      <Filter>06. Render\01. RenderState</Filter>
+    </ClCompile>
+    <ClCompile Include="Resource\Shader\TerrainConstantBuffer.cpp">
+      <Filter>02. Resource\02. Shader\03. ConstantBuffer\11. Terrain</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\NavigationManager2D.cpp">
+      <Filter>03. Scene\06. Navigation\01. 2D</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\NavigationManager3D.cpp">
+      <Filter>03. Scene\06. Navigation\02. 3D</Filter>
+    </ClCompile>
+    <ClCompile Include="Thread\Navigation.cpp">
+      <Filter>01. Manager\10. Thread\02. Navigation\01. 2D</Filter>
+    </ClCompile>
+    <ClCompile Include="Thread\Navigation2DThread.cpp">
+      <Filter>01. Manager\10. Thread\02. Navigation\01. 2D</Filter>
+    </ClCompile>
+    <ClCompile Include="Thread\Navigation3D.cpp">
+      <Filter>01. Manager\10. Thread\02. Navigation\02. 3D</Filter>
+    </ClCompile>
+    <ClCompile Include="Thread\Navigation3DThread.cpp">
+      <Filter>01. Manager\10. Thread\02. Navigation\02. 3D</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\NavigationMesh.cpp">
+      <Filter>03. Scene\06. Navigation\02. 3D</Filter>
+    </ClCompile>
+    <ClCompile Include="Component\NavigationAgent3D.cpp">
+      <Filter>05. Component\02. ObjectComponent\01. NavAgent</Filter>
+    </ClCompile>
+    <ClCompile Include="Resource\Shader\BillboardShader.cpp">
+      <Filter>02. Resource\02. Shader\02. ShaderClass\14. Billboard</Filter>
+    </ClCompile>
+    <ClCompile Include="Resource\Particle\Particle.cpp">
+      <Filter>02. Resource\08. Particle</Filter>
+    </ClCompile>
+    <ClCompile Include="Resource\Particle\ParticleManager.cpp">
+      <Filter>02. Resource\08. Particle</Filter>
+    </ClCompile>
+    <ClCompile Include="Resource\Shader\ParticleRenderShader.cpp">
+      <Filter>02. Resource\02. Shader\02. ShaderClass\15. Particle</Filter>
+    </ClCompile>
+    <ClCompile Include="Resource\Shader\ParticleUpdateShader.cpp">
+      <Filter>02. Resource\02. Shader\02. ShaderClass\15. Particle</Filter>
+    </ClCompile>
+    <ClCompile Include="Resource\Shader\ParticleConstantBuffer.cpp">
+      <Filter>02. Resource\02. Shader\03. ConstantBuffer\12. Particle</Filter>
+    </ClCompile>
+    <ClCompile Include="ImGuizmo.cpp">
+      <Filter>07. Editor\01. IMGUI</Filter>
+    </ClCompile>
+    <ClCompile Include="Editor\EditorGizmo.cpp">
+      <Filter>07. Editor\03. Widget</Filter>
+    </ClCompile>
+    <ClCompile Include="Component\AnimationMeshComponent.cpp">
+      <Filter>05. Component\01. SceneComponent\01. Primitive\02. 3D\01. Mesh</Filter>
+    </ClCompile>
+    <ClCompile Include="Component\StaticMeshComponent.cpp">
+      <Filter>05. Component\01. SceneComponent\01. Primitive\02. 3D\01. Mesh</Filter>
+    </ClCompile>
+    <ClCompile Include="Component\BillboardComponent.cpp">
+      <Filter>05. Component\01. SceneComponent\01. Primitive\02. 3D\03. Billboard</Filter>
+    </ClCompile>
+    <ClCompile Include="Component\TerrainComponent.cpp">
+      <Filter>05. Component\01. SceneComponent\01. Primitive\02. 3D\02. Terrain</Filter>
+    </ClCompile>
+    <ClCompile Include="Component\ParticleComponent.cpp">
+      <Filter>05. Component\01. SceneComponent\01. Primitive\02. 3D\04. Particle</Filter>
+    </ClCompile>
+    <ClCompile Include="Component\DecalComponent.cpp">
+      <Filter>05. Component\01. SceneComponent\01. Primitive\02. 3D\05. Decal</Filter>
+    </ClCompile>
+    <ClCompile Include="Resource\Shader\DecalShader.cpp">
+      <Filter>02. Resource\02. Shader\02. ShaderClass\16. Decal</Filter>
+    </ClCompile>
+    <ClCompile Include="Resource\Shader\DecalDebugShader.cpp">
+      <Filter>02. Resource\02. Shader\02. ShaderClass\16. Decal</Filter>
+    </ClCompile>
+    <ClCompile Include="Resource\Shader\FXAAShader.cpp">
+      <Filter>02. Resource\02. Shader\02. ShaderClass\05. FXAA</Filter>
+    </ClCompile>
+    <ClCompile Include="Component\ColliderSphere3D.cpp">
+      <Filter>05. Component\01. SceneComponent\04. Colider\02. 3D</Filter>
+    </ClCompile>
+    <ClCompile Include="Resource\Shader\ShadowMapInstancingShader.cpp">
+      <Filter>02. Resource\02. Shader\02. ShaderClass\17. ShadowMap</Filter>
+    </ClCompile>
+    <ClCompile Include="Resource\Shader\ShadowMapShader.cpp">
+      <Filter>02. Resource\02. Shader\02. ShaderClass\17. ShadowMap</Filter>
+    </ClCompile>
+    <ClCompile Include="Resource\Shader\ShadowMapStaticInstancingShader.cpp">
+      <Filter>02. Resource\02. Shader\02. ShaderClass\17. ShadowMap</Filter>
+    </ClCompile>
+    <ClCompile Include="Resource\Shader\ShadowMapStaticShader.cpp">
+      <Filter>02. Resource\02. Shader\02. ShaderClass\17. ShadowMap</Filter>
+    </ClCompile>
+    <ClCompile Include="Resource\Shader\ShadowConstantBuffer.cpp">
+      <Filter>02. Resource\02. Shader\03. ConstantBuffer\13. Shadow</Filter>
+    </ClCompile>
+    <ClCompile Include="Resource\Shader\LightCelShader.cpp">
+      <Filter>02. Resource\02. Shader\02. ShaderClass\08. Light</Filter>
+    </ClCompile>
+    <ClCompile Include="Component\ColliderCube.cpp">
+      <Filter>05. Component\01. SceneComponent\04. Colider\02. 3D</Filter>
+    </ClCompile>
+    <ClCompile Include="Component\ColliderOBB3D.cpp">
+      <Filter>05. Component\01. SceneComponent\04. Colider\02. 3D</Filter>
+    </ClCompile>
+    <ClCompile Include="UI\UITextButton.cpp">
+      <Filter>09. UI\02. Widget</Filter>
+    </ClCompile>
+    <ClCompile Include="SkillManager.cpp">
+      <Filter>01. Manager\11. Skill</Filter>
+    </ClCompile>
+    <ClCompile Include="Resource\Shader\FXAAConstantBuffer.cpp">
+      <Filter>02. Resource\02. Shader\03. ConstantBuffer\14. FXAA</Filter>
+    </ClCompile>
+    <ClCompile Include="Resource\Shader\MSShader.cpp">
+      <Filter>02. Resource\02. Shader\02. ShaderClass\05. FXAA</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\CutScene.cpp">
+      <Filter>03. Scene\08. CutScene</Filter>
+    </ClCompile>
+    <ClCompile Include="UI\RapidXml\CXmlParser.cpp">
+      <Filter>09. UI\03. RapidXml</Filter>
+    </ClCompile>
+    <ClCompile Include="Resource\Shader\OceanShader.cpp">
+      <Filter>02. Resource\02. Shader\02. ShaderClass\18. Ocean</Filter>
+    </ClCompile>
+    <ClCompile Include="Component\OceanComponent.cpp">
+      <Filter>05. Component\01. SceneComponent\01. Primitive\02. 3D\06. Ocean</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <FxCompile Include="..\Bin\Shader\Share.fx">
+      <Filter>02. Resource\02. Shader\01. HLSL</Filter>
+    </FxCompile>
+    <FxCompile Include="..\Bin\Shader\Sprite.fx">
+      <Filter>02. Resource\02. Shader\01. HLSL</Filter>
+    </FxCompile>
+    <FxCompile Include="..\Bin\Shader\Collider.fx">
+      <Filter>02. Resource\02. Shader\01. HLSL</Filter>
+    </FxCompile>
+    <FxCompile Include="..\Bin\Shader\UI.fx">
+      <Filter>02. Resource\02. Shader\01. HLSL</Filter>
+    </FxCompile>
+    <FxCompile Include="..\Bin\Shader\TileMap.fx">
+      <Filter>02. Resource\02. Shader\01. HLSL</Filter>
+    </FxCompile>
+    <FxCompile Include="..\Bin\Shader\Mesh.fx">
+      <Filter>02. Resource\02. Shader\01. HLSL</Filter>
+    </FxCompile>
+    <FxCompile Include="..\Bin\Shader\Debug.fx">
+      <Filter>02. Resource\02. Shader\01. HLSL</Filter>
+    </FxCompile>
+    <FxCompile Include="..\Bin\Shader\Light.fx">
+      <Filter>02. Resource\02. Shader\01. HLSL</Filter>
+    </FxCompile>
+    <FxCompile Include="..\Bin\Shader\AnimationUpdate.fx">
+      <Filter>02. Resource\02. Shader\01. HLSL</Filter>
+    </FxCompile>
+    <FxCompile Include="..\Bin\Shader\Sky.fx">
+      <Filter>02. Resource\02. Shader\01. HLSL</Filter>
+    </FxCompile>
+    <FxCompile Include="..\Bin\Shader\Terrain.fx">
+      <Filter>02. Resource\02. Shader\01. HLSL</Filter>
+    </FxCompile>
+    <FxCompile Include="..\Bin\Shader\Billboard.fx">
+      <Filter>02. Resource\02. Shader\01. HLSL</Filter>
+    </FxCompile>
+    <FxCompile Include="..\Bin\Shader\ParticleUpdate.fx">
+      <Filter>02. Resource\02. Shader\01. HLSL</Filter>
+    </FxCompile>
+    <FxCompile Include="..\Bin\Shader\ParticleRender.fx">
+      <Filter>02. Resource\02. Shader\01. HLSL</Filter>
+    </FxCompile>
+    <FxCompile Include="..\Bin\Shader\Decal.fx">
+      <Filter>02. Resource\02. Shader\01. HLSL</Filter>
+    </FxCompile>
+    <FxCompile Include="..\Bin\Shader\ShadowMap.fx">
+      <Filter>02. Resource\02. Shader\01. HLSL</Filter>
+    </FxCompile>
+    <FxCompile Include="..\Bin\Shader\FXAA.hlsl">
+      <Filter>02. Resource\02. Shader\01. HLSL</Filter>
+    </FxCompile>
+    <FxCompile Include="..\..\AR41Editor\Bin\Shader\Ocean.fx">
+      <Filter>02. Resource\02. Shader\01. HLSL</Filter>
+    </FxCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resource\Texture\DirectXTex.inl">
+      <Filter>02. Resource\03. Texture</Filter>
+    </None>
+    <None Include="fmod_dsp.cs">
+      <Filter>02. Resource\06. Sound\01. FMOD</Filter>
+    </None>
+    <None Include="fmod_errors.cs">
+      <Filter>02. Resource\06. Sound\01. FMOD</Filter>
+    </None>
+    <None Include="fmod.cs">
+      <Filter>02. Resource\06. Sound\01. FMOD</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="AR41Engine.rc">
+      <Filter>리소스 파일</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

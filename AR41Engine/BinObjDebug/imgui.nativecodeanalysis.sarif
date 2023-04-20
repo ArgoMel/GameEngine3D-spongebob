@@ -1,0 +1,3817 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://schemastore.azurewebsites.net/schemas/json/sarif-2.1.0-rtm.5.json",
+  "runs": [
+    {
+      "results": [
+        {
+          "ruleId": "C33010",
+          "message": {
+            "text": "인덱스로 사용되는 열거형 source의 하한을 선택하지 않았습니다."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/c++/Directx/GameEngine/AR41Engine/Include/imgui.cpp"
+                },
+                "region": {
+                  "startLine": 8570,
+                  "startColumn": 5,
+                  "endLine": 8570,
+                  "endColumn": 37
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "GetInputSourceName",
+                  "decoratedName": "?GetInputSourceName@@YAPEBDW4ImGuiInputSource@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/c++/Directx/GameEngine/AR41Engine/Include/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 8566,
+                            "startColumn": 20
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/c++/Directx/GameEngine/AR41Engine/Include/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 8568,
+                            "startColumn": 17
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/c++/Directx/GameEngine/AR41Engine/Include/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 8568,
+                            "startColumn": 40
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/c++/Directx/GameEngine/AR41Engine/Include/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 8569,
+                            "startColumn": 5
+                          }
+                        },
+                        "message": {
+                          "text": "Branching based on condition '1'. 'true' branch is taken"
+                        }
+                      },
+                      "kinds": [
+                        "Branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/c++/Directx/GameEngine/AR41Engine/Include/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 8569,
+                            "startColumn": 5
+                          }
+                        },
+                        "message": {
+                          "text": "Branching based on condition '0 <= source'. 'false' branch is taken\n열거형 값 'source'의 상한 경계가 확인되었습니다."
+                        }
+                      },
+                      "kinds": [
+                        "Combination"
+                      ],
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/c++/Directx/GameEngine/AR41Engine/Include/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 8569,
+                            "startColumn": 5
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/c++/Directx/GameEngine/AR41Engine/Include/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 8569,
+                            "startColumn": 5
+                          }
+                        },
+                        "message": {
+                          "text": "Branching based on condition '0'. 'false' branch is taken"
+                        }
+                      },
+                      "kinds": [
+                        "Branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/c++/Directx/GameEngine/AR41Engine/Include/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 8569,
+                            "startColumn": 5
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/c++/Directx/GameEngine/AR41Engine/Include/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 8569,
+                            "startColumn": 5
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/c++/Directx/GameEngine/AR41Engine/Include/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 8570,
+                            "startColumn": 5
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C6011",
+          "message": {
+            "text": "NULL 포인터 'viewport'을(를) 역참조하고 있습니다. "
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/c++/Directx/GameEngine/AR41Engine/Include/imgui.cpp"
+                },
+                "region": {
+                  "startLine": 13185,
+                  "startColumn": 5,
+                  "endLine": 13185,
+                  "endColumn": 5
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ImGui::DestroyViewport",
+                  "decoratedName": "?DestroyViewport@ImGui@@YAXPEAUImGuiViewportP@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/c++/Directx/GameEngine/AR41Engine/Include/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 13169,
+                            "startColumn": 19
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/c++/Directx/GameEngine/AR41Engine/Include/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 13170,
+                            "startColumn": 14
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/c++/Directx/GameEngine/AR41Engine/Include/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 13170,
+                            "startColumn": 37
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/c++/Directx/GameEngine/AR41Engine/Include/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 13172,
+                            "startColumn": 22
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/c++/Directx/GameEngine/AR41Engine/Include/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 13173,
+                            "startColumn": 30
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/c++/Directx/GameEngine/AR41Engine/Include/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 13175,
+                            "startColumn": 26
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/c++/Directx/GameEngine/AR41Engine/Include/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 13176,
+                            "startColumn": 31
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/c++/Directx/GameEngine/AR41Engine/Include/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 13170,
+                            "startColumn": 63
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/c++/Directx/GameEngine/AR41Engine/Include/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 13170,
+                            "startColumn": 37
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/c++/Directx/GameEngine/AR41Engine/Include/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 13172,
+                            "startColumn": 22
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/c++/Directx/GameEngine/AR41Engine/Include/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 13173,
+                            "startColumn": 30
+                          }
+                        },
+                        "message": {
+                          "text": "'viewport'은(는) NULL일 수 있습니다. (이 분기 건너뛰기)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/c++/Directx/GameEngine/AR41Engine/Include/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 13175,
+                            "startColumn": 26
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/c++/Directx/GameEngine/AR41Engine/Include/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 13176,
+                            "startColumn": 31
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/c++/Directx/GameEngine/AR41Engine/Include/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 13170,
+                            "startColumn": 63
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/c++/Directx/GameEngine/AR41Engine/Include/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 13170,
+                            "startColumn": 37
+                          }
+                        },
+                        "message": {
+                          "text": "이 루프 종료, ('window_n<g.Windows.Size'이(가) false임)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/c++/Directx/GameEngine/AR41Engine/Include/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 13178,
+                            "startColumn": 18
+                          }
+                        },
+                        "message": {
+                          "text": "이 분기 건너뛰기, ('<분기 조건>'이(가) false라고 가정)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/c++/Directx/GameEngine/AR41Engine/Include/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 13182,
+                            "startColumn": 5
+                          }
+                        },
+                        "message": {
+                          "text": "이 분기 건너뛰기, ('<분기 조건>'이(가) false라고 가정)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/c++/Directx/GameEngine/AR41Engine/Include/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 13183,
+                            "startColumn": 26
+                          }
+                        },
+                        "message": {
+                          "text": "'viewport'은(는) 'ImGui::DestroyPlatformWindow'(d:\\c++\\directx\\gameengine\\ar41engine\\include\\imgui_internal.h:2817에서 선언됨)에 대한 In/Out 인수입니다."
+                        }
+                      },
+                      "kinds": [
+                        "declaration"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/c++/Directx/GameEngine/AR41Engine/Include/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 13184,
+                            "startColumn": 5
+                          }
+                        },
+                        "message": {
+                          "text": "이 루프 시작, ('<분기 조건>' 가정)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/c++/Directx/GameEngine/AR41Engine/Include/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 13185,
+                            "startColumn": 5
+                          }
+                        },
+                        "message": {
+                          "text": "이 루프 건너뛰기, ('<분기 조건>'이(가) false라고 가정)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/c++/Directx/GameEngine/AR41Engine/Include/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 13185,
+                            "startColumn": 5
+                          }
+                        },
+                        "message": {
+                          "text": "'viewport'이(가) 역참조되었지만 여전히 NULL일 수 있습니다."
+                        }
+                      },
+                      "kinds": [
+                        "usage"
+                      ],
+                      "importance": "essential"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C6011",
+          "message": {
+            "text": "NULL 포인터 'window->Viewport'을(를) 역참조하고 있습니다. "
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/c++/Directx/GameEngine/AR41Engine/Include/imgui.cpp"
+                },
+                "region": {
+                  "startLine": 13313,
+                  "startColumn": 13,
+                  "endLine": 13313,
+                  "endColumn": 74
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ImGui::WindowSelectViewport",
+                  "decoratedName": "?WindowSelectViewport@ImGui@@YAXPEAUImGuiWindow@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/c++/Directx/GameEngine/AR41Engine/Include/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 13193,
+                            "startColumn": 19
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/c++/Directx/GameEngine/AR41Engine/Include/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 13194,
+                            "startColumn": 22
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/c++/Directx/GameEngine/AR41Engine/Include/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 13195,
+                            "startColumn": 48
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/c++/Directx/GameEngine/AR41Engine/Include/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 13198,
+                            "startColumn": 21
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/c++/Directx/GameEngine/AR41Engine/Include/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 13199,
+                            "startColumn": 9
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/c++/Directx/GameEngine/AR41Engine/Include/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 13204,
+                            "startColumn": 27
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/c++/Directx/GameEngine/AR41Engine/Include/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 13207,
+                            "startColumn": 71
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/c++/Directx/GameEngine/AR41Engine/Include/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 13213,
+                            "startColumn": 73
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/c++/Directx/GameEngine/AR41Engine/Include/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 13228,
+                            "startColumn": 10
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/c++/Directx/GameEngine/AR41Engine/Include/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 13229,
+                            "startColumn": 32
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/c++/Directx/GameEngine/AR41Engine/Include/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 13236,
+                            "startColumn": 53
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/c++/Directx/GameEngine/AR41Engine/Include/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 13243,
+                            "startColumn": 31
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/c++/Directx/GameEngine/AR41Engine/Include/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 13248,
+                            "startColumn": 20
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/c++/Directx/GameEngine/AR41Engine/Include/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 13252,
+                            "startColumn": 44
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/c++/Directx/GameEngine/AR41Engine/Include/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 13256,
+                            "startColumn": 77
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/c++/Directx/GameEngine/AR41Engine/Include/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 13266,
+                            "startColumn": 14
+                          }
+                        },
+                        "message": {
+                          "text": "'window->Viewport'은(는) NULL일 수 있습니다."
+                        }
+                      },
+                      "kinds": [
+                        "declaration"
+                      ],
+                      "importance": "essential"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/c++/Directx/GameEngine/AR41Engine/Include/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 13267,
+                            "startColumn": 13
+                          }
+                        },
+                        "message": {
+                          "text": "이 분기 건너뛰기, ('<분기 조건>'이(가) false라고 가정)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/c++/Directx/GameEngine/AR41Engine/Include/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 13272,
+                            "startColumn": 26
+                          }
+                        },
+                        "message": {
+                          "text": "이 분기 시작, ('window->Viewport==0' 가정)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/c++/Directx/GameEngine/AR41Engine/Include/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 13273,
+                            "startColumn": 13
+                          }
+                        },
+                        "message": {
+                          "text": "이 분기 건너뛰기, ('<분기 조건>'이(가) false라고 가정)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/c++/Directx/GameEngine/AR41Engine/Include/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 13277,
+                            "startColumn": 9
+                          }
+                        },
+                        "message": {
+                          "text": "이 분기 시작, ('!lock_viewport' 가정)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/c++/Directx/GameEngine/AR41Engine/Include/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 13279,
+                            "startColumn": 19
+                          }
+                        },
+                        "message": {
+                          "text": "이 분기 건너뛰기, ('flags'이(가) false라고 가정)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/c++/Directx/GameEngine/AR41Engine/Include/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 13291,
+                            "startColumn": 144
+                          }
+                        },
+                        "message": {
+                          "text": "이 분기 건너뛰기, ('<분기 조건>'이(가) false라고 가정)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/c++/Directx/GameEngine/AR41Engine/Include/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 13309,
+                            "startColumn": 65
+                          }
+                        },
+                        "message": {
+                          "text": "이 분기 시작, ('<분기 조건>' 가정)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/c++/Directx/GameEngine/AR41Engine/Include/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 13313,
+                            "startColumn": 56
+                          }
+                        },
+                        "message": {
+                          "text": "'window->Viewport'이(가) 역참조되었지만 여전히 NULL일 수 있습니다."
+                        }
+                      },
+                      "kinds": [
+                        "usage"
+                      ],
+                      "importance": "essential"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C6011",
+          "message": {
+            "text": "NULL 포인터 'window'을(를) 역참조하고 있습니다. 이 오류가 발생할 수 있는 이전 위치는 줄 13194을(를) 참조하십시오."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/c++/Directx/GameEngine/AR41Engine/Include/imgui.cpp"
+                },
+                "region": {
+                  "startLine": 13318,
+                  "startColumn": 5,
+                  "endLine": 13318,
+                  "endColumn": 56
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ImGui::WindowSelectViewport",
+                  "decoratedName": "?WindowSelectViewport@ImGui@@YAXPEAUImGuiWindow@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/c++/Directx/GameEngine/AR41Engine/Include/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 13193,
+                            "startColumn": 19
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/c++/Directx/GameEngine/AR41Engine/Include/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 13194,
+                            "startColumn": 22
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/c++/Directx/GameEngine/AR41Engine/Include/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 13195,
+                            "startColumn": 48
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/c++/Directx/GameEngine/AR41Engine/Include/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 13198,
+                            "startColumn": 21
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/c++/Directx/GameEngine/AR41Engine/Include/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 13199,
+                            "startColumn": 9
+                          }
+                        },
+                        "message": {
+                          "text": "이 분기 건너뛰기, ('<분기 조건>'이(가) false라고 가정)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/c++/Directx/GameEngine/AR41Engine/Include/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 13204,
+                            "startColumn": 27
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/c++/Directx/GameEngine/AR41Engine/Include/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 13207,
+                            "startColumn": 71
+                          }
+                        },
+                        "message": {
+                          "text": "이 분기 건너뛰기, ('<분기 조건>'이(가) false라고 가정)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/c++/Directx/GameEngine/AR41Engine/Include/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 13213,
+                            "startColumn": 73
+                          }
+                        },
+                        "message": {
+                          "text": "이 분기 건너뛰기, ('<분기 조건>'이(가) false라고 가정)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/c++/Directx/GameEngine/AR41Engine/Include/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 13228,
+                            "startColumn": 10
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/c++/Directx/GameEngine/AR41Engine/Include/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 13229,
+                            "startColumn": 32
+                          }
+                        },
+                        "message": {
+                          "text": "이 분기 건너뛰기, ('<분기 조건>'이(가) false라고 가정)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/c++/Directx/GameEngine/AR41Engine/Include/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 13236,
+                            "startColumn": 53
+                          }
+                        },
+                        "message": {
+                          "text": "이 분기 건너뛰기, ('<분기 조건>'이(가) false라고 가정)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/c++/Directx/GameEngine/AR41Engine/Include/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 13243,
+                            "startColumn": 31
+                          }
+                        },
+                        "message": {
+                          "text": "이 분기 건너뛰기, ('<분기 조건>'이(가) false라고 가정)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/c++/Directx/GameEngine/AR41Engine/Include/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 13248,
+                            "startColumn": 20
+                          }
+                        },
+                        "message": {
+                          "text": "이 분기 건너뛰기, ('flags'이(가) false라고 가정)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/c++/Directx/GameEngine/AR41Engine/Include/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 13252,
+                            "startColumn": 44
+                          }
+                        },
+                        "message": {
+                          "text": "'window'은(는) 'ImGui::GetWindowAlwaysWantOwnViewport'(줄 1023에서 선언됨)에 대한 In/Out 인수입니다."
+                        }
+                      },
+                      "kinds": [
+                        "declaration"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/c++/Directx/GameEngine/AR41Engine/Include/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 13252,
+                            "startColumn": 44
+                          }
+                        },
+                        "message": {
+                          "text": "이 분기 건너뛰기, ('<분기 조건>'이(가) false라고 가정)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/c++/Directx/GameEngine/AR41Engine/Include/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 13256,
+                            "startColumn": 77
+                          }
+                        },
+                        "message": {
+                          "text": "이 분기 건너뛰기, ('<분기 조건>'이(가) false라고 가정)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/c++/Directx/GameEngine/AR41Engine/Include/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 13266,
+                            "startColumn": 14
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/c++/Directx/GameEngine/AR41Engine/Include/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 13267,
+                            "startColumn": 13
+                          }
+                        },
+                        "message": {
+                          "text": "이 분기 건너뛰기, ('<분기 조건>'이(가) false라고 가정)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/c++/Directx/GameEngine/AR41Engine/Include/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 13272,
+                            "startColumn": 26
+                          }
+                        },
+                        "message": {
+                          "text": "이 분기 시작, ('window->Viewport==0' 가정)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/c++/Directx/GameEngine/AR41Engine/Include/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 13273,
+                            "startColumn": 13
+                          }
+                        },
+                        "message": {
+                          "text": "'window'은(는) 'ImGui::UpdateTryMergeWindowIntoHostViewport'(줄 1021에서 선언됨)에 대한 In/Out 인수입니다."
+                        }
+                      },
+                      "kinds": [
+                        "declaration"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/c++/Directx/GameEngine/AR41Engine/Include/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 13273,
+                            "startColumn": 13
+                          }
+                        },
+                        "message": {
+                          "text": "이 분기 시작, ('<분기 조건>' 가정)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/c++/Directx/GameEngine/AR41Engine/Include/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 13274,
+                            "startColumn": 30
+                          }
+                        },
+                        "message": {
+                          "text": "'window'은(는) 'ImGui::AddUpdateViewport'(줄 1015에서 선언됨)에 대한 In/Out 인수입니다."
+                        }
+                      },
+                      "kinds": [
+                        "declaration"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/c++/Directx/GameEngine/AR41Engine/Include/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 13277,
+                            "startColumn": 9
+                          }
+                        },
+                        "message": {
+                          "text": "이 분기 시작, ('!lock_viewport' 가정)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/c++/Directx/GameEngine/AR41Engine/Include/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 13279,
+                            "startColumn": 19
+                          }
+                        },
+                        "message": {
+                          "text": "이 분기 건너뛰기, ('flags'이(가) false라고 가정)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/c++/Directx/GameEngine/AR41Engine/Include/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 13291,
+                            "startColumn": 144
+                          }
+                        },
+                        "message": {
+                          "text": "이 분기 건너뛰기, ('<분기 조건>'이(가) false라고 가정)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/c++/Directx/GameEngine/AR41Engine/Include/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 13309,
+                            "startColumn": 65
+                          }
+                        },
+                        "message": {
+                          "text": "이 분기 시작, ('<분기 조건>' 가정)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/c++/Directx/GameEngine/AR41Engine/Include/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 13313,
+                            "startColumn": 56
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/c++/Directx/GameEngine/AR41Engine/Include/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 13318,
+                            "startColumn": 27
+                          }
+                        },
+                        "message": {
+                          "text": "'window'이(가) 역참조되었지만 여전히 NULL일 수 있습니다."
+                        }
+                      },
+                      "kinds": [
+                        "usage"
+                      ],
+                      "importance": "essential"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C6011",
+          "message": {
+            "text": "NULL 포인터 'node'을(를) 역참조하고 있습니다. 이 오류가 발생할 수 있는 이전 위치는 줄 14323을(를) 참조하십시오."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/c++/Directx/GameEngine/AR41Engine/Include/imgui.cpp"
+                },
+                "region": {
+                  "startLine": 14412,
+                  "startColumn": 9,
+                  "endLine": 14412,
+                  "endColumn": 40
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ImGui::DockContextProcessDock",
+                  "decoratedName": "?DockContextProcessDock@ImGui@@YAXPEAUImGuiContext@@PEAUImGuiDockRequest@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/c++/Directx/GameEngine/AR41Engine/Include/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 14285,
+                            "startColumn": 5
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/c++/Directx/GameEngine/AR41Engine/Include/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 14286,
+                            "startColumn": 5
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/c++/Directx/GameEngine/AR41Engine/Include/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 14288,
+                            "startColumn": 19
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/c++/Directx/GameEngine/AR41Engine/Include/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 14289,
+                            "startColumn": 5
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/c++/Directx/GameEngine/AR41Engine/Include/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 14291,
+                            "startColumn": 18
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/c++/Directx/GameEngine/AR41Engine/Include/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 14292,
+                            "startColumn": 18
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/c++/Directx/GameEngine/AR41Engine/Include/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 14293,
+                            "startColumn": 20
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/c++/Directx/GameEngine/AR41Engine/Include/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 14294,
+                            "startColumn": 9
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/c++/Directx/GameEngine/AR41Engine/Include/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 14297,
+                            "startColumn": 9
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/c++/Directx/GameEngine/AR41Engine/Include/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 14300,
+                            "startColumn": 13
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/c++/Directx/GameEngine/AR41Engine/Include/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 14301,
+                            "startColumn": 20
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/c++/Directx/GameEngine/AR41Engine/Include/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 14302,
+                            "startColumn": 9
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/c++/Directx/GameEngine/AR41Engine/Include/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 14314,
+                            "startColumn": 9
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/c++/Directx/GameEngine/AR41Engine/Include/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 14316,
+                            "startColumn": 31
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/c++/Directx/GameEngine/AR41Engine/Include/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 14320,
+                            "startColumn": 14
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/c++/Directx/GameEngine/AR41Engine/Include/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 14322,
+                            "startColumn": 14
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/c++/Directx/GameEngine/AR41Engine/Include/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 14323,
+                            "startColumn": 19
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/c++/Directx/GameEngine/AR41Engine/Include/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 14324,
+                            "startColumn": 20
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/c++/Directx/GameEngine/AR41Engine/Include/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 14325,
+                            "startColumn": 43
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/c++/Directx/GameEngine/AR41Engine/Include/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 14333,
+                            "startColumn": 14
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/c++/Directx/GameEngine/AR41Engine/Include/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 14334,
+                            "startColumn": 19
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/c++/Directx/GameEngine/AR41Engine/Include/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 14345,
+                            "startColumn": 24
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/c++/Directx/GameEngine/AR41Engine/Include/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 14347,
+                            "startColumn": 14
+                          }
+                        },
+                        "message": {
+                          "text": "'node'은(는) NULL일 수 있습니다. (이 분기 건너뛰기)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/c++/Directx/GameEngine/AR41Engine/Include/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 14412,
+                            "startColumn": 38
+                          }
+                        },
+                        "message": {
+                          "text": "'node'이(가) 역참조되었지만 여전히 NULL일 수 있습니다."
+                        }
+                      },
+                      "kinds": [
+                        "usage"
+                      ],
+                      "importance": "essential"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C6011",
+          "message": {
+            "text": "NULL 포인터 'node->TabBar'을(를) 역참조하고 있습니다. "
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/c++/Directx/GameEngine/AR41Engine/Include/imgui.cpp"
+                },
+                "region": {
+                  "startLine": 14640,
+                  "startColumn": 13,
+                  "endLine": 14640,
+                  "endColumn": 81
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ImGui::DockNodeAddWindow",
+                  "decoratedName": "?DockNodeAddWindow@ImGui@@YAXPEAUImGuiDockNode@@PEAUImGuiWindow@@_N@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/c++/Directx/GameEngine/AR41Engine/Include/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 14599,
+                            "startColumn": 19
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/c++/Directx/GameEngine/AR41Engine/Include/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 14599,
+                            "startColumn": 38
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/c++/Directx/GameEngine/AR41Engine/Include/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 14600,
+                            "startColumn": 15
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/c++/Directx/GameEngine/AR41Engine/Include/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 14606,
+                            "startColumn": 5
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/c++/Directx/GameEngine/AR41Engine/Include/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 14607,
+                            "startColumn": 5
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/c++/Directx/GameEngine/AR41Engine/Include/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 14612,
+                            "startColumn": 61
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/c++/Directx/GameEngine/AR41Engine/Include/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 14615,
+                            "startColumn": 28
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/c++/Directx/GameEngine/AR41Engine/Include/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 14616,
+                            "startColumn": 34
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/c++/Directx/GameEngine/AR41Engine/Include/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 14617,
+                            "startColumn": 22
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/c++/Directx/GameEngine/AR41Engine/Include/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 14618,
+                            "startColumn": 20
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/c++/Directx/GameEngine/AR41Engine/Include/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 14619,
+                            "startColumn": 26
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/c++/Directx/GameEngine/AR41Engine/Include/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 14620,
+                            "startColumn": 30
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/c++/Directx/GameEngine/AR41Engine/Include/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 14624,
+                            "startColumn": 34
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/c++/Directx/GameEngine/AR41Engine/Include/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 14635,
+                            "startColumn": 9
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/c++/Directx/GameEngine/AR41Engine/Include/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 14637,
+                            "startColumn": 26
+                          }
+                        },
+                        "message": {
+                          "text": "'node->TabBar'은(는) NULL일 수 있습니다. (이 분기 시작)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/c++/Directx/GameEngine/AR41Engine/Include/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 14639,
+                            "startColumn": 30
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/c++/Directx/GameEngine/AR41Engine/Include/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 14640,
+                            "startColumn": 41
+                          }
+                        },
+                        "message": {
+                          "text": "'node->TabBar'이(가) 역참조되었지만 여전히 NULL일 수 있습니다."
+                        }
+                      },
+                      "kinds": [
+                        "usage"
+                      ],
+                      "importance": "essential"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C28182",
+          "message": {
+            "text": "NULL 포인터를 역참조하고 있습니다. 'node'에 'info->CentralNode'과(와) 동일한 NULL 값이 포함되어 있습니다. 이 오류가 발생할 수 있는 이전 위치는 줄 14810을(를) 참조하십시오."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/c++/Directx/GameEngine/AR41Engine/Include/imgui.cpp"
+                },
+                "region": {
+                  "startLine": 14824,
+                  "startColumn": 9,
+                  "endLine": 14824,
+                  "endColumn": 27
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "DockNodeFindInfo",
+                  "decoratedName": "?DockNodeFindInfo@@YAXPEAUImGuiDockNode@@PEAUImGuiDockNodeTreeInfo@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/c++/Directx/GameEngine/AR41Engine/Include/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 14810,
+                            "startColumn": 28
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/c++/Directx/GameEngine/AR41Engine/Include/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 14816,
+                            "startColumn": 28
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/c++/Directx/GameEngine/AR41Engine/Include/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 14818,
+                            "startColumn": 9
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/c++/Directx/GameEngine/AR41Engine/Include/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 14819,
+                            "startColumn": 9
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/c++/Directx/GameEngine/AR41Engine/Include/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 14820,
+                            "startColumn": 27
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/c++/Directx/GameEngine/AR41Engine/Include/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 14822,
+                            "startColumn": 41
+                          }
+                        },
+                        "message": {
+                          "text": "'node'은(는) NULL일 수 있습니다. (이 분기 건너뛰기)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/c++/Directx/GameEngine/AR41Engine/Include/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 14824,
+                            "startColumn": 27
+                          }
+                        },
+                        "message": {
+                          "text": "이 분기 건너뛰기, ('node->ChildNodes[0]'이(가) false라고 가정)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/c++/Directx/GameEngine/AR41Engine/Include/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 14824,
+                            "startColumn": 27
+                          }
+                        },
+                        "message": {
+                          "text": "'node'이(가) 역참조되었지만 여전히 NULL일 수 있습니다."
+                        }
+                      },
+                      "kinds": [
+                        "usage"
+                      ],
+                      "importance": "essential"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C6011",
+          "message": {
+            "text": "NULL 포인터 'merge_lead_child'을(를) 역참조하고 있습니다. "
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/c++/Directx/GameEngine/AR41Engine/Include/imgui.cpp"
+                },
+                "region": {
+                  "startLine": 16121,
+                  "startColumn": 5,
+                  "endLine": 16121,
+                  "endColumn": 50
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ImGui::DockNodeTreeMerge",
+                  "decoratedName": "?DockNodeTreeMerge@ImGui@@YAXPEAUImGuiContext@@PEAUImGuiDockNode@@1@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/c++/Directx/GameEngine/AR41Engine/Include/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 16095,
+                            "startColumn": 19
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/c++/Directx/GameEngine/AR41Engine/Include/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 16096,
+                            "startColumn": 20
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/c++/Directx/GameEngine/AR41Engine/Include/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 16097,
+                            "startColumn": 20
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/c++/Directx/GameEngine/AR41Engine/Include/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 16098,
+                            "startColumn": 5
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/c++/Directx/GameEngine/AR41Engine/Include/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 16099,
+                            "startColumn": 5
+                          }
+                        },
+                        "message": {
+                          "text": "'merge_lead_child'은(는) NULL일 수 있습니다. (이 루프 시작)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/c++/Directx/GameEngine/AR41Engine/Include/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 16100,
+                            "startColumn": 48
+                          }
+                        },
+                        "message": {
+                          "text": "이 분기 건너뛰기, ('<분기 조건>'이(가) false라고 가정)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/c++/Directx/GameEngine/AR41Engine/Include/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 16105,
+                            "startColumn": 5
+                          }
+                        },
+                        "message": {
+                          "text": "이 분기 건너뛰기, ('<분기 조건>'이(가) false라고 가정)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/c++/Directx/GameEngine/AR41Engine/Include/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 16107,
+                            "startColumn": 12
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/c++/Directx/GameEngine/AR41Engine/Include/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 16108,
+                            "startColumn": 27
+                          }
+                        },
+                        "message": {
+                          "text": "'merge_lead_child'은(는) 'ImGui::DockNodeMoveChildNodes'(줄 13828에서 선언됨)에 대한 In/Out 인수입니다."
+                        }
+                      },
+                      "kinds": [
+                        "declaration"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/c++/Directx/GameEngine/AR41Engine/Include/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 16109,
+                            "startColumn": 9
+                          }
+                        },
+                        "message": {
+                          "text": "이 분기 건너뛰기, ('child_0'이(가) false라고 가정)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/c++/Directx/GameEngine/AR41Engine/Include/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 16114,
+                            "startColumn": 9
+                          }
+                        },
+                        "message": {
+                          "text": "이 분기 시작, ('child_1' 가정)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/c++/Directx/GameEngine/AR41Engine/Include/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 16116,
+                            "startColumn": 28
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/c++/Directx/GameEngine/AR41Engine/Include/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 16117,
+                            "startColumn": 41
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/c++/Directx/GameEngine/AR41Engine/Include/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 16119,
+                            "startColumn": 34
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/c++/Directx/GameEngine/AR41Engine/Include/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 16120,
+                            "startColumn": 34
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/c++/Directx/GameEngine/AR41Engine/Include/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 16121,
+                            "startColumn": 32
+                          }
+                        },
+                        "message": {
+                          "text": "'merge_lead_child'이(가) 역참조되었지만 여전히 NULL일 수 있습니다."
+                        }
+                      },
+                      "kinds": [
+                        "usage"
+                      ],
+                      "importance": "essential"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C6011",
+          "message": {
+            "text": "NULL 포인터 'node'을(를) 역참조하고 있습니다. "
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/c++/Directx/GameEngine/AR41Engine/Include/imgui.cpp"
+                },
+                "region": {
+                  "startLine": 17119,
+                  "startColumn": 9,
+                  "endLine": 17119,
+                  "endColumn": 33
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ImGui::BeginDocked",
+                  "decoratedName": "?BeginDocked@ImGui@@YAXPEAUImGuiWindow@@PEA_N@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/c++/Directx/GameEngine/AR41Engine/Include/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 17069,
+                            "startColumn": 19
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/c++/Directx/GameEngine/AR41Engine/Include/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 17070,
+                            "startColumn": 19
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/c++/Directx/GameEngine/AR41Engine/Include/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 17073,
+                            "startColumn": 26
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/c++/Directx/GameEngine/AR41Engine/Include/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 17075,
+                            "startColumn": 16
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/c++/Directx/GameEngine/AR41Engine/Include/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 17076,
+                            "startColumn": 9
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/c++/Directx/GameEngine/AR41Engine/Include/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 17087,
+                            "startColumn": 14
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/c++/Directx/GameEngine/AR41Engine/Include/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 17088,
+                            "startColumn": 9
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/c++/Directx/GameEngine/AR41Engine/Include/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 17089,
+                            "startColumn": 9
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/c++/Directx/GameEngine/AR41Engine/Include/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 17090,
+                            "startColumn": 13
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/c++/Directx/GameEngine/AR41Engine/Include/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 17098,
+                            "startColumn": 20
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/c++/Directx/GameEngine/AR41Engine/Include/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 17099,
+                            "startColumn": 14
+                          }
+                        },
+                        "message": {
+                          "text": "'node'은(는) NULL일 수 있습니다. (이 분기 건너뛰기)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/c++/Directx/GameEngine/AR41Engine/Include/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 17101,
+                            "startColumn": 29
+                          }
+                        },
+                        "message": {
+                          "text": "이 분기 건너뛰기, ('window->DockId!=0&&node==0'이(가) false라고 가정)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/c++/Directx/GameEngine/AR41Engine/Include/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 17119,
+                            "startColumn": 30
+                          }
+                        },
+                        "message": {
+                          "text": "'node'이(가) 역참조되었지만 여전히 NULL일 수 있습니다."
+                        }
+                      },
+                      "kinds": [
+                        "usage"
+                      ],
+                      "importance": "essential"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C28182",
+          "message": {
+            "text": "NULL 포인터를 역참조하고 있습니다. 'window->DockNode'에 'node'과(와) 동일한 NULL 값이 포함되어 있습니다. 이 오류가 발생할 수 있는 이전 위치는 줄 17119을(를) 참조하십시오."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/c++/Directx/GameEngine/AR41Engine/Include/imgui.cpp"
+                },
+                "region": {
+                  "startLine": 17190,
+                  "startColumn": 18,
+                  "endLine": 17190,
+                  "endColumn": 50
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ImGui::BeginDocked",
+                  "decoratedName": "?BeginDocked@ImGui@@YAXPEAUImGuiWindow@@PEA_N@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/c++/Directx/GameEngine/AR41Engine/Include/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 17069,
+                            "startColumn": 19
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/c++/Directx/GameEngine/AR41Engine/Include/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 17070,
+                            "startColumn": 19
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/c++/Directx/GameEngine/AR41Engine/Include/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 17073,
+                            "startColumn": 26
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/c++/Directx/GameEngine/AR41Engine/Include/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 17075,
+                            "startColumn": 16
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/c++/Directx/GameEngine/AR41Engine/Include/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 17076,
+                            "startColumn": 9
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/c++/Directx/GameEngine/AR41Engine/Include/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 17087,
+                            "startColumn": 14
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/c++/Directx/GameEngine/AR41Engine/Include/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 17088,
+                            "startColumn": 9
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/c++/Directx/GameEngine/AR41Engine/Include/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 17089,
+                            "startColumn": 9
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/c++/Directx/GameEngine/AR41Engine/Include/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 17090,
+                            "startColumn": 13
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/c++/Directx/GameEngine/AR41Engine/Include/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 17098,
+                            "startColumn": 20
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/c++/Directx/GameEngine/AR41Engine/Include/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 17099,
+                            "startColumn": 14
+                          }
+                        },
+                        "message": {
+                          "text": "'node'은(는) NULL일 수 있습니다. (이 분기 건너뛰기)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/c++/Directx/GameEngine/AR41Engine/Include/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 17101,
+                            "startColumn": 29
+                          }
+                        },
+                        "message": {
+                          "text": "이 분기 건너뛰기, ('window->DockId!=0&&node==0'이(가) false라고 가정)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/c++/Directx/GameEngine/AR41Engine/Include/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 17119,
+                            "startColumn": 30
+                          }
+                        },
+                        "message": {
+                          "text": "이 분기 건너뛰기, ('<분기 조건>'이(가) false라고 가정)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/c++/Directx/GameEngine/AR41Engine/Include/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 17131,
+                            "startColumn": 14
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/c++/Directx/GameEngine/AR41Engine/Include/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 17131,
+                            "startColumn": 35
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/c++/Directx/GameEngine/AR41Engine/Include/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 17132,
+                            "startColumn": 43
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/c++/Directx/GameEngine/AR41Engine/Include/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 17131,
+                            "startColumn": 75
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/c++/Directx/GameEngine/AR41Engine/Include/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 17131,
+                            "startColumn": 35
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/c++/Directx/GameEngine/AR41Engine/Include/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 17132,
+                            "startColumn": 43
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/c++/Directx/GameEngine/AR41Engine/Include/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 17131,
+                            "startColumn": 75
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/c++/Directx/GameEngine/AR41Engine/Include/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 17131,
+                            "startColumn": 35
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/c++/Directx/GameEngine/AR41Engine/Include/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 17137,
+                            "startColumn": 26
+                          }
+                        },
+                        "message": {
+                          "text": "이 분기 건너뛰기, ('node->HostWindow==0'이(가) false라고 가정)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/c++/Directx/GameEngine/AR41Engine/Include/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 17147,
+                            "startColumn": 5
+                          }
+                        },
+                        "message": {
+                          "text": "이 루프 시작, ('!!((node->HostWindow))' 가정)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/c++/Directx/GameEngine/AR41Engine/Include/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 17148,
+                            "startColumn": 5
+                          }
+                        },
+                        "message": {
+                          "text": "이 루프 시작, ('!!((node->IsLeafNode()))' 가정)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/c++/Directx/GameEngine/AR41Engine/Include/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 17149,
+                            "startColumn": 5
+                          }
+                        },
+                        "message": {
+                          "text": "이 루프 시작, ('<분기 조건>' 가정)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/c++/Directx/GameEngine/AR41Engine/Include/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 17150,
+                            "startColumn": 17
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/c++/Directx/GameEngine/AR41Engine/Include/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 17153,
+                            "startColumn": 65
+                          }
+                        },
+                        "message": {
+                          "text": "이 분기 건너뛰기, ('<분기 조건>'이(가) false라고 가정)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/c++/Directx/GameEngine/AR41Engine/Include/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 17160,
+                            "startColumn": 21
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/c++/Directx/GameEngine/AR41Engine/Include/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 17161,
+                            "startColumn": 22
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/c++/Directx/GameEngine/AR41Engine/Include/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 17162,
+                            "startColumn": 32
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/c++/Directx/GameEngine/AR41Engine/Include/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 17163,
+                            "startColumn": 26
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/c++/Directx/GameEngine/AR41Engine/Include/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 17164,
+                            "startColumn": 31
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/c++/Directx/GameEngine/AR41Engine/Include/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 17165,
+                            "startColumn": 30
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/c++/Directx/GameEngine/AR41Engine/Include/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 17166,
+                            "startColumn": 27
+                          }
+                        },
+                        "message": {
+                          "text": "이 분기 건너뛰기, ('node->MergedFlags'이(가) false라고 가정)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/c++/Directx/GameEngine/AR41Engine/Include/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 17170,
+                            "startColumn": 29
+                          }
+                        },
+                        "message": {
+                          "text": "이 분기 건너뛰기, ('node->VisibleWindow==window'이(가) false라고 가정)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/c++/Directx/GameEngine/AR41Engine/Include/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 17174,
+                            "startColumn": 5
+                          }
+                        },
+                        "message": {
+                          "text": "이 루프 시작, ('<분기 조건>' 가정)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/c++/Directx/GameEngine/AR41Engine/Include/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 17175,
+                            "startColumn": 19
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/c++/Directx/GameEngine/AR41Engine/Include/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 17176,
+                            "startColumn": 32
+                          }
+                        },
+                        "message": {
+                          "text": "이 분기 건너뛰기, ('<분기 조건>'이(가) false라고 가정)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/c++/Directx/GameEngine/AR41Engine/Include/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 17179,
+                            "startColumn": 23
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/c++/Directx/GameEngine/AR41Engine/Include/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 17183,
+                            "startColumn": 22
+                          }
+                        },
+                        "message": {
+                          "text": "이 분기 건너뛰기, ('<분기 조건>'이(가) false라고 가정)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/c++/Directx/GameEngine/AR41Engine/Include/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 17186,
+                            "startColumn": 71
+                          }
+                        },
+                        "message": {
+                          "text": "이 분기 건너뛰기, ('<분기 조건>'이(가) false라고 가정)"
+                        }
+                      },
+                      "kinds": [
+                        "branch"
+                      ],
+                      "importance": "important"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/c++/Directx/GameEngine/AR41Engine/Include/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 17190,
+                            "startColumn": 18
+                          }
+                        },
+                        "message": {
+                          "text": "'node'이(가) 역참조되었지만 여전히 NULL일 수 있습니다."
+                        }
+                      },
+                      "kinds": [
+                        "usage"
+                      ],
+                      "importance": "essential"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "ruleId": "C6387",
+          "message": {
+            "text": "'_Param_(2)'은(는) '0'일 수 있습니다."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/c++/Directx/GameEngine/AR41Engine/Include/imgui.cpp"
+                },
+                "region": {
+                  "startLine": 17671,
+                  "startColumn": 7,
+                  "endLine": 17671,
+                  "endColumn": 76
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "SetPlatformImeDataFn_DefaultImpl",
+                  "decoratedName": "?SetPlatformImeDataFn_DefaultImpl@@YAXPEAUImGuiViewport@@PEAUImGuiPlatformImeData@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "codeFlows": [
+            {
+              "threadFlows": [
+                {
+                  "locations": [
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/c++/Directx/GameEngine/AR41Engine/Include/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 17663,
+                            "startColumn": 10
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/c++/Directx/GameEngine/AR41Engine/Include/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 17665,
+                            "startColumn": 14
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/c++/Directx/GameEngine/AR41Engine/Include/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 17668,
+                            "startColumn": 14
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    },
+                    {
+                      "location": {
+                        "physicalLocation": {
+                          "artifactLocation": {
+                            "uri": "file:///D:/c++/Directx/GameEngine/AR41Engine/Include/imgui.cpp"
+                          },
+                          "region": {
+                            "startLine": 17671,
+                            "startColumn": 28
+                          }
+                        }
+                      },
+                      "importance": "unimportant"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "tool": {
+        "driver": {
+          "name": "PREfast",
+          "fullName": "PREfast Code Analysis",
+          "version": "14.33.31630.0",
+          "informationUri": "https://aka.ms/cpp/ca"
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true
+        }
+      ],
+      "artifacts": [
+        {
+          "location": {
+            "uri": "file:///D:/c++/Directx/GameEngine/AR41Engine/Include/imgui.cpp"
+          },
+          "roles": [
+            "analysisTarget",
+            "resultFile"
+          ],
+          "hashes": {
+            "sha-256": "a641a2b1a10e8c679891842916b60e08e04417c9f5119df78c9f1d9972c5e3db"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/c++/directx/gameengine/ar41engine/include/imgui.h"
+          },
+          "hashes": {
+            "sha-256": "45fc8846d912e7ccfe3235049a1b1c7d8dba27676bfe24f60816d24e417b2143"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/c++/directx/gameengine/ar41engine/include/imconfig.h"
+          },
+          "hashes": {
+            "sha-256": "78dac169cf9982189686de74fbbefb063a8bd8206fe4d2ee8270b14db55dfd77"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/c++/directx/gameengine/ar41engine/include/imgui_internal.h"
+          },
+          "hashes": {
+            "sha-256": "669a51499817dd467f3bf99741eabf6df7eec9efe916798d6a8b8e89f7dd9910"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/c++/directx/gameengine/ar41engine/include/imstb_textedit.h"
+          },
+          "hashes": {
+            "sha-256": "952dafd13b3bdfceb7179da7f7d11db14419e7ae3613982741428b7a036b5d27"
+          }
+        }
+      ]
+    }
+  ]
+}

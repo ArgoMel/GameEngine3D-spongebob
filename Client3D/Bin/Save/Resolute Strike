@@ -1,0 +1,23 @@
+[name]
+Resolute Strike
+[skill_name]
+none
+[attck]
+0
+[speed]
+500
+[element]
+1
+[summon_count]
+0
+[pattern_delay]
+1801
+[animation_exist]
+0
+[animation_repeat]
+0
+[bullet_type]
+2
+[life_time]
+1
+[no_option]

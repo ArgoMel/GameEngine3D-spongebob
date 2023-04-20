@@ -1,0 +1,75 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://schemastore.azurewebsites.net/schemas/json/sarif-2.1.0-rtm.5.json",
+  "runs": [
+    {
+      "results": [],
+      "tool": {
+        "driver": {
+          "name": "PREfast",
+          "fullName": "PREfast Code Analysis",
+          "version": "14.33.31630.0",
+          "informationUri": "https://aka.ms/cpp/ca"
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true
+        }
+      ],
+      "artifacts": [
+        {
+          "location": {
+            "uri": "file:///d:/c++/directx/gameengine/ar41engine/include/vector3.cpp"
+          },
+          "roles": [
+            "analysisTarget"
+          ],
+          "hashes": {
+            "sha-256": "e54a063d4fd9506874da22e3e29c2958d977a8569d1b8d84344c914dbb527c66"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/c++/directx/gameengine/ar41engine/include/vector3.h"
+          },
+          "hashes": {
+            "sha-256": "3076617c0b9613d0805b023cb650154b793e98bced18fc5cc33438a37793380b"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/c++/directx/gameengine/ar41engine/include/matrix.h"
+          },
+          "hashes": {
+            "sha-256": "44736248bcb36cddbae42bd525e4657eda6224dc6e6bcc4cea0bc527bca2d230"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/c++/directx/gameengine/ar41engine/include/vector4.h"
+          },
+          "hashes": {
+            "sha-256": "bfd3cbeb67a493bf188d313523d5289340a378ed002ee98b499a4c6e40448bc4"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/c++/directx/gameengine/ar41engine/include/enginemath.h"
+          },
+          "hashes": {
+            "sha-256": "4c4e901fa6af728508ad137f767369d8c05b0818ec64148515c70285e99397fe"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/c++/directx/gameengine/ar41engine/include/flag.h"
+          },
+          "hashes": {
+            "sha-256": "066fdcdcc7e0b58c94b81c0791e479e7733854174a58ecbc65b37a583d811d72"
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,120 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "winres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 한국어(대한민국) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+LANGUAGE LANG_KOREAN, SUBLANG_DEFAULT
+#pragma code_page(949)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""winres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_ICON1               ICON                    "icon1.ico"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU1 MENU
+BEGIN
+    POPUP "파일(&F)"
+    BEGIN
+        MENUITEM "장면 저장(&S)",                   ID_FILE_SCENE_SAVE
+        MENUITEM "장면 불러오기(&O)",                 ID_FILE_SCENE_OPEN
+        MENUITEM "종료(&Q)",                      ID_FILE_EXIT
+    END
+    POPUP "창"
+    BEGIN
+        MENUITEM "TestWindow",                  ID_WINDOW_TEST
+        MENUITEM "ObjectWindow",                ID_WINDOW_OBJECT
+        MENUITEM "SceneWindow",                 ID_Window_Scene
+        MENUITEM "DetailWindow",                ID_Window_Detail
+        MENUITEM "ComponentWindow",             ID_Window_Component
+        MENUITEM "CameraWindow",                ID_Window_Camera
+    END
+    POPUP "오브젝트"
+    BEGIN
+        MENUITEM "GameObject Empty(&G)",        ID_OBJECT_EMPTY
+        MENUITEM "GameObject",                  ID_OBJECT
+    END
+    POPUP "콜라이더"
+    BEGIN
+        MENUITEM "2D",                          ID_Window_Collider2D
+        MENUITEM "픽셀",                          ID_Window_ColliderPixel
+    END
+    POPUP "UI"
+    BEGIN
+        MENUITEM "Button",                      ID_Window_BUTTON
+        MENUITEM "Image",                       ID_Window_UIImage
+        MENUITEM "ProgressBar",                 ID_Window_PROGRESSBAR
+        MENUITEM "Number",                      ID_Window_NUMBER
+        MENUITEM "Text",                        ID_Window_TEXT
+    END
+    POPUP "2D"
+    BEGIN
+        MENUITEM "이미지",                         ID_Window_IMAGE
+        MENUITEM "애니메이션",                       ID_Window_Animation
+        MENUITEM "애니메이션(수업)",                   ID_Window_Animation2D
+    END
+END
+
+#endif    // 한국어(대한민국) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

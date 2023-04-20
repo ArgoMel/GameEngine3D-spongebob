@@ -1,0 +1,315 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://schemastore.azurewebsites.net/schemas/json/sarif-2.1.0-rtm.5.json",
+  "runs": [
+    {
+      "results": [
+        {
+          "ruleId": "C26813",
+          "message": {
+            "text": "'bitwise and'를 사용하여 플래그가 설정되었는지 확인합니다."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///D:/c++/Directx/GameEngine/AR41Engine/Include/Resource/Texture/DirectXTex.h"
+                },
+                "region": {
+                  "startLine": 186,
+                  "startColumn": 53,
+                  "endLine": 186,
+                  "endColumn": 74
+                }
+              },
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "DirectX::TexMetadata::IsVolumemap",
+                  "decoratedName": "?IsVolumemap@TexMetadata@DirectX@@QEBA_NXZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "tool": {
+        "driver": {
+          "name": "PREfast",
+          "fullName": "PREfast Code Analysis",
+          "version": "14.33.31630.0",
+          "informationUri": "https://aka.ms/cpp/ca"
+        }
+      },
+      "invocations": [
+        {
+          "executionSuccessful": true
+        }
+      ],
+      "artifacts": [
+        {
+          "location": {
+            "uri": "file:///D:/c++/Directx/GameEngine/AR41Engine/Include/Resource/Texture/DirectXTex.h"
+          },
+          "roles": [
+            "resultFile"
+          ],
+          "hashes": {
+            "sha-256": "1bbae9ca796755d805b6f9aca0ea826144387b8d56e5df87a5ac71ae79fcba94"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/c++/directx/gameengine/ar41engine/include/resource/material/material.cpp"
+          },
+          "roles": [
+            "analysisTarget"
+          ],
+          "hashes": {
+            "sha-256": "fd6d2dc2bbddf33300b11841ad971320bb4075733bf4810532ab4f5ad883ed6d"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/c++/directx/gameengine/ar41engine/include/resource/material/material.h"
+          },
+          "hashes": {
+            "sha-256": "1aac78c706b0751f80011608d8031c509da12ea652f7fd60b089487c01d84e8a"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/c++/directx/gameengine/ar41engine/include/ref.h"
+          },
+          "hashes": {
+            "sha-256": "be831e3c98ce4b745d7fe9d0e03eeb47e113de49abad8ea434e0c6e0195626d9"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/c++/directx/gameengine/ar41engine/include/engineinfo.h"
+          },
+          "hashes": {
+            "sha-256": "e91b586a17c51f856c0a2a1f1b3c7d9c8bba12c25ae54f34a356c837cbdd01b9"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/c++/directx/gameengine/ar41engine/include/vector2.h"
+          },
+          "hashes": {
+            "sha-256": "a799967f11e96458712dc0aa5d8c4df42e0b51b504f4f00280339f2f87f140b6"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/c++/directx/gameengine/ar41engine/include/enginemath.h"
+          },
+          "hashes": {
+            "sha-256": "4c4e901fa6af728508ad137f767369d8c05b0818ec64148515c70285e99397fe"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/c++/directx/gameengine/ar41engine/include/flag.h"
+          },
+          "hashes": {
+            "sha-256": "066fdcdcc7e0b58c94b81c0791e479e7733854174a58ecbc65b37a583d811d72"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/c++/directx/gameengine/ar41engine/include/vector3.h"
+          },
+          "hashes": {
+            "sha-256": "3076617c0b9613d0805b023cb650154b793e98bced18fc5cc33438a37793380b"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/c++/directx/gameengine/ar41engine/include/matrix.h"
+          },
+          "hashes": {
+            "sha-256": "44736248bcb36cddbae42bd525e4657eda6224dc6e6bcc4cea0bc527bca2d230"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/c++/directx/gameengine/ar41engine/include/vector4.h"
+          },
+          "hashes": {
+            "sha-256": "bfd3cbeb67a493bf188d313523d5289340a378ed002ee98b499a4c6e40448bc4"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/c++/directx/gameengine/ar41engine/include/sharedptr.h"
+          },
+          "hashes": {
+            "sha-256": "2b83aad35360bba556501baad2fa81df2a35d8b65fa8abe5646b9a1d3d7ce524"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/c++/directx/gameengine/ar41engine/include/resource/texture/directxtex.inl"
+          },
+          "hashes": {
+            "sha-256": "2896f740bacea922a09cfbd44a3f6a1c85639d07dfa40165927cbf7fed9b22bd"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/c++/directx/gameengine/ar41engine/include/resource/texture/texture.h"
+          },
+          "hashes": {
+            "sha-256": "70d941a27a45c7bec9e6e919879ac2ea1f43b36c8ad1e801bb317b94dd4e2126"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/c++/directx/gameengine/ar41engine/include/render/renderstate.h"
+          },
+          "hashes": {
+            "sha-256": "bba82536653220d08518745dd7deb61c7702440f73385d6b3e06e1edb8f604f9"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/c++/directx/gameengine/ar41engine/include/resource/resourcemanager.h"
+          },
+          "hashes": {
+            "sha-256": "f05b9f71316a6fa42f021604bcb2d60bc88fb421b7c1714ffb5d312eb8923fd7"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/c++/directx/gameengine/ar41engine/include/resource/shader/shadermanager.h"
+          },
+          "hashes": {
+            "sha-256": "5f6c9899182f938d305646f492fece341564461eaa68c2b5911eef5ee3071fbb"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/c++/directx/gameengine/ar41engine/include/resource/material/materialmanager.h"
+          },
+          "hashes": {
+            "sha-256": "b6d03b3416cc9cd0e5bfc9a09f2d845dcdb31b79a712bb3c84aeb1cf1887bd9a"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/c++/directx/gameengine/ar41engine/include/resource/animation/animationmanager.h"
+          },
+          "hashes": {
+            "sha-256": "f511ada89a26be353ced880bd916a758fadfc62ae369a2e7254efeff2b16d03a"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/c++/directx/gameengine/ar41engine/include/resource/animation/animationsequence2d.h"
+          },
+          "hashes": {
+            "sha-256": "dd177d27d852ee33cdf88fee60d6292e518330662816be7cba9161319554c4a4"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/c++/directx/gameengine/ar41engine/include/resource/shader/materialconstantbuffer.h"
+          },
+          "hashes": {
+            "sha-256": "95578f4c3a9309305a57d7ca5a1595bc64e369e7f2f17b4c82a59a699b18b24e"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/c++/directx/gameengine/ar41engine/include/resource/shader/constantbufferdata.h"
+          },
+          "hashes": {
+            "sha-256": "0d9269fb39822f5624c9bc961c2a5b56dcb962bf72c2b70a32fe02233e170995"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/c++/directx/gameengine/ar41engine/include/resource/shader/constantbuffer.h"
+          },
+          "hashes": {
+            "sha-256": "7a5cbcd5290d07213fb8400a5c206ecca4f14e3f6cb7d8f8e1615df322ec46c5"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/c++/directx/gameengine/ar41engine/include/resource/shader/shader.h"
+          },
+          "hashes": {
+            "sha-256": "4a30fbfdfd6717988426bfe439a87698c25a4d72124e3606217122b82bf83f21"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/c++/directx/gameengine/ar41engine/include/scene/scene.h"
+          },
+          "hashes": {
+            "sha-256": "d02780db78ae5043e8f568581558f8e09227d7e9bdd1af7434a2cf17de5b89fc"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/c++/directx/gameengine/ar41engine/include/scene/sceneinfo.h"
+          },
+          "hashes": {
+            "sha-256": "b064e95eb60ae7e98df7dacf6e55bd394d82d0278a91254840838d2bb8f4e85f"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/c++/directx/gameengine/ar41engine/include/scene/sceneresource.h"
+          },
+          "hashes": {
+            "sha-256": "ce5895f705f1b6346f60167bab2abdd166a8ad081e9188a9845b73e5bfce3f2f"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/c++/directx/gameengine/ar41engine/include/resource/mesh/mesh.h"
+          },
+          "hashes": {
+            "sha-256": "8c0c7aa1b97442c028e9efaa20d62516f722c3431feb968f30113eb063f2c38d"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/c++/directx/gameengine/ar41engine/include/scene/cameramanager.h"
+          },
+          "hashes": {
+            "sha-256": "82ca40c89ace22970cb1d9a4ccefd4318e13bb925f7fe96c5e1589afa2b2edcf"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/c++/directx/gameengine/ar41engine/include/scene/scenecollision.h"
+          },
+          "hashes": {
+            "sha-256": "9d59f2e4d25452173a4cbb62a785f6b2b1c4bc0cfeb9d9b387fb82e6e280ff66"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/c++/directx/gameengine/ar41engine/include/render/rendermanager.h"
+          },
+          "hashes": {
+            "sha-256": "58adfc22a320a81f4543e9ccc8c0cda7291aa68703c3ec2d56b672902942ef50"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///d:/c++/directx/gameengine/ar41engine/include/render/renderstatemanager.h"
+          },
+          "hashes": {
+            "sha-256": "b8df281cfcfce8782f73dddea3b87f9f2e7b393422fded134f8362fab4959b01"
+          }
+        }
+      ]
+    }
+  ]
+}

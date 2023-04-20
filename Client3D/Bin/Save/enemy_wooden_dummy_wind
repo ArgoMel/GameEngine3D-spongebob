@@ -1,0 +1,24 @@
+[name]
+Wooden Dummy
+[bullet_name]
+claw_twice
+[hp]
+10
+[attck]
+20
+[defense]
+0
+[element]
+0
+[tribe]
+3
+[summon_count]
+1
+[pattern_delay]
+2
+[animation_repeat]
+0
+[monter_type]
+0
+[life_time]
+-1
