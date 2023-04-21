@@ -83,6 +83,7 @@ bool CMaterialManager::Init()
 	material = CreateMaterial<CMaterial>("BikiniCityTerrain");
 	material->SetShader("TerrainShader");
 	material->AddTexture(0, (int)EShaderBufferType::Pixel, "BikiniCity", TEXT("LandScape/T_BB_Sand_01_D.tga"));
+	material->SetEmissiveColor(0.1f, 0.1f, 0.1f, 0.f);
 
 	material = CreateMaterial<CMaterial>("Sea");
 	material->SetShader("OceanShader");
