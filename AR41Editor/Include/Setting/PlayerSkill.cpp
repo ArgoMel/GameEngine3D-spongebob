@@ -92,13 +92,13 @@ void CPlayerSkill::PatrickRClick(CGameObject* obj)
 	{
 		player->m_IsStop = true;
 		scene->GetResource()->SoundPlay("Patrick_Throw");
-		player->m_Anim[(int)EMain_Character::Patrick]->ChangeAnimation("PlayerThrow");
+		player->m_Anim[(int)EMain_Character::Patrick]->ChangeAnimation("PatrickThrow");
 	}
 	else if (player->m_CanPickUp)
 	{
 		player->m_IsStop = true;
 		scene->GetResource()->SoundPlay("Patrick_Lift");
-		player->m_Anim[(int)EMain_Character::Patrick]->ChangeAnimation("PlayerPickUp");
+		player->m_Anim[(int)EMain_Character::Patrick]->ChangeAnimation("PatrickPickUp");
 	}
 }
 
@@ -108,7 +108,7 @@ void CPlayerSkill::SandyRClick(CGameObject* obj)
 	CPlayer* player = (CPlayer*)obj;
 	player->m_IsStop = true;
 	scene->GetResource()->SoundPlay("Sandy_LassoAttack");
-	player->m_Anim[(int)EMain_Character::Sandy]->ChangeAnimation("PlayerLassoStart");
+	player->m_Anim[(int)EMain_Character::Sandy]->ChangeAnimation("SandyLassoStart");
 	player->m_LassoDistance = 0.f;
 	player->m_Mesh->GetSkeleton()->GetSocket("Weapon")->SetOffset(-5.f, 105.f, 105.f);
 	player->m_Weapon->Lasso("Lasso_Start");

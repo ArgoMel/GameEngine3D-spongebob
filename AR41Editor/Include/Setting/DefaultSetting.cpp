@@ -101,7 +101,7 @@ void CDefaultSetting::CreateCDO()
 
 void CDefaultSetting::LoadResource()
 {
-    CResourceManager::GetInst()->LoadMesh(nullptr, MeshType::Static, "Player_Default", TEXT("Player_Default.fbx"));
+    //CResourceManager::GetInst()->LoadMesh(nullptr, MeshType::Static, "Player_Default", TEXT("Player_Default.msh"));
 
     // Sound
     LoadSound();

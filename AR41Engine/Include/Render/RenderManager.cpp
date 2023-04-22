@@ -446,49 +446,49 @@ void CRenderManager::RenderShadowMap(float deltaTime)
 			++iter;
 			continue;
 		}
-		if ((*iter)->GetSceneComponentType() == SceneComponentType::Primitive)
-		{
-			CMesh* mesh = ((CPrimitiveComponent*)iter->Get())->GetMesh();
-			if (mesh->GetRenderCount() >= 5)
-			{
-				CRenderInstancing* instancing = nullptr;
-				instancing = FindInstancing(mesh);
-				if (!instancing)
-				{
-					if (m_EmptyPoolList.empty())
-					{
-						std::vector<CRenderInstancing*>	newPool = m_vecInstancingPool;
-						m_vecInstancingPool.clear();
-						m_vecInstancingPool.resize(newPool.size() * 2);
-						for (size_t i = 0; i < newPool.size(); ++i)
-						{
-							m_vecInstancingPool[i] = newPool[i];
-						}
-						for (size_t i = newPool.size(); i < newPool.size() * 2; ++i)
-						{
-							m_vecInstancingPool[i] = new CRenderInstancing;
-							m_vecInstancingPool[i]->m_PoolIndex = (int)i;
-							m_EmptyPoolList.push_back((int)i);
-						}
-					}
-					int index = m_EmptyPoolList.front();
-					m_EmptyPoolList.pop_front();
-					m_mapInstancing.insert(std::make_pair(mesh, m_vecInstancingPool[index]));
-					m_vecInstancingPool[index]->m_Key = mesh;
-					instancing = m_vecInstancingPool[index];
-				}
-				instancing->m_LayerName = "Default";
-				instancing->AddRenderList((CPrimitiveComponent*)iter->Get());
-			}
-			else
-			{
-				m_NormalRenderList.push_back(*iter);
-			}
-		}
-		else
-		{
+		//if ((*iter)->GetSceneComponentType() == SceneComponentType::Primitive)
+		//{
+		//	CMesh* mesh = ((CPrimitiveComponent*)iter->Get())->GetMesh();
+		//	if (mesh->GetRenderCount() >= 5)
+		//	{
+		//		CRenderInstancing* instancing = nullptr;
+		//		instancing = FindInstancing(mesh);
+		//		if (!instancing)
+		//		{
+		//			if (m_EmptyPoolList.empty())
+		//			{
+		//				std::vector<CRenderInstancing*>	newPool = m_vecInstancingPool;
+		//				m_vecInstancingPool.clear();
+		//				m_vecInstancingPool.resize(newPool.size() * 2);
+		//				for (size_t i = 0; i < newPool.size(); ++i)
+		//				{
+		//					m_vecInstancingPool[i] = newPool[i];
+		//				}
+		//				for (size_t i = newPool.size(); i < newPool.size() * 2; ++i)
+		//				{
+		//					m_vecInstancingPool[i] = new CRenderInstancing;
+		//					m_vecInstancingPool[i]->m_PoolIndex = (int)i;
+		//					m_EmptyPoolList.push_back((int)i);
+		//				}
+		//			}
+		//			int index = m_EmptyPoolList.front();
+		//			m_EmptyPoolList.pop_front();
+		//			m_mapInstancing.insert(std::make_pair(mesh, m_vecInstancingPool[index]));
+		//			m_vecInstancingPool[index]->m_Key = mesh;
+		//			instancing = m_vecInstancingPool[index];
+		//		}
+		//		instancing->m_LayerName = "Default";
+		//		instancing->AddRenderList((CPrimitiveComponent*)iter->Get());
+		//	}
+		//	else
+		//	{
+		//		m_NormalRenderList.push_back(*iter);
+		//	}
+		//}
+		//else
+		//{
 			m_NormalRenderList.push_back(*iter);
-		}
+		//}
 		++iter;
 	}
 	// 인스턴싱이 아닌 물체를 그려낸다.
