@@ -65,7 +65,7 @@ bool CSceneInfo::Init()
 		CLightComponent* GlobalLightComponent = GlobalLightObj->CreateComponent<CLightComponent>("GlobalLight");
 		GlobalLightComponent->SetLightType(ELightType::Direction);
 		GlobalLightComponent->SetRelativeRotation(0, 90.f, 0.f);
-		GlobalLightComponent->SetLightIntensity(5.f);
+		GlobalLightComponent->SetLightIntensity(10.f);
 		m_Owner->GetLightManager()->SetGlobalLightObject(GlobalLightObj);
 	}
     return true;
