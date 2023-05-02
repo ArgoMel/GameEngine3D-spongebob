@@ -78,7 +78,6 @@ bool CLightManager::Init()
 	//CGameObject* lightObj = m_Owner->CreateObject<CGameObject>("LightSpot");
 	//CLightComponent* lightCom = lightObj->CreateComponent<CLightComponent>("Light");
 	//lightCom->SetLightType(ELightType::Spot);
-	//lightCom->SetRelativeScale(0.1f, 0.1f, 0.1f);
 	//lightCom->SetLightAngleIn(30.f);
 	//lightCom->SetLightAngleOut(90.f);
 	//lightCom->SetLightColor(Vector4(1.f, 0.f, 0.f, 1.f));

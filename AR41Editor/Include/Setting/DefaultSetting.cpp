@@ -156,8 +156,8 @@ void CDefaultSetting::SetInput()
     CInput::GetInst()->AddBindKey("F6", VK_F6);
     CInput::GetInst()->AddBindKey("F7", VK_F7);
     CInput::GetInst()->AddBindKey("F8", VK_F8);
-    CInput::GetInst()->AddBindKey("F9", VK_F9);
-    CInput::GetInst()->AddBindKey("F10", VK_F10);
+    CInput::GetInst()->AddBindKey("F9", VK_F9);     //mouse img on/off
+    CInput::GetInst()->AddBindKey("F10", VK_F10);   //Do not use
     CInput::GetInst()->AddBindKey("F11", VK_F11);   //mouse cursor on/off
     CInput::GetInst()->AddBindKey("F12", VK_F12);   //Do not use
 

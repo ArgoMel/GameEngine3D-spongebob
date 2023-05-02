@@ -160,24 +160,15 @@ LightResult ComputeCelShaderLight(float3 ViewPos, float3 ViewNormal,
     }
     if (Info.LightLightType == LightTypeSpot)
     {
-        LightDir = normalize(Info.LightPos - ViewPos);
+        LightDir = Info.LightPos - ViewPos;
+        LightDir = normalize(LightDir);
         float dotLight = dot(ViewNormal, LightDir);
         float3 lookAt = -Info.LightDir;
-        Info.LightIntensity = 0;
         float lightAngle = dot(lookAt, LightDir);
         [branch]//[flatten]     hlsl Attribute 
         if (lightAngle > 0.0f)
         {
             Info.LightIntensity = smoothstep(Info.LightAngleOut, Info.LightAngleIn, lightAngle);
-        }
-        float Dist = distance(Info.LightPos, ViewPos);
-        if (Dist > Info.LightDistance)
-        {
-            Attn = 0.f;
-        }
-        else
-        {
-            Attn = 1.f - min(Dist / Info.LightDistance, 1.f);
         }
     }
     float2  UV;

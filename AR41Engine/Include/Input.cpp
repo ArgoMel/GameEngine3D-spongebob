@@ -694,9 +694,9 @@ bool CInput::Init(HINSTANCE hInst, HWND hWnd)
 	m_Alt = false;
 	m_Shift = false;
 	ShowCursor(FALSE);
-	AddBindKey("F10", VK_F10);
+	AddBindKey("F9", VK_F10);
 	AddBindKey("F11", VK_F11);
-	AddBindFunction<CInput>("F10", Input_Type::Down, this, &CInput::SetMouseImgVisible,
+	AddBindFunction<CInput>("F9", Input_Type::Down, this, &CInput::SetMouseImgVisible,
 		CSceneManager::GetInst()->GetScene());
 	AddBindFunction<CInput>("F11", Input_Type::Down, this, &CInput::SetMouseVisible,
 		CSceneManager::GetInst()->GetScene());
