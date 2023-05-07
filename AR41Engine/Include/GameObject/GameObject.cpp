@@ -288,10 +288,13 @@ void CGameObject::Load(FILE* file)
 {
 	CRef::Load(file);
 	fread(&m_LifeTime, 4, 1, file);
-	int	length = 0;
+	size_t	length = 0;
 	char	typeName[256] = {};
 	fread(&length, 4, 1, file);
-	assert(length >= 0);
+	if (length > MAXCHAR)
+	{
+		throw std::runtime_error("file data unexpected size");
+	}
 	fread(typeName, 1, length, file);
 	if (!m_RootComponent)
 	{
@@ -317,7 +320,10 @@ void CGameObject::Load(FILE* file)
 			int	length = 0;
 			char	typeName[256] = {};
 			fread(&length, 4, 1, file);
-			assert(length >= 0);
+			if (length > MAXCHAR)
+			{
+				throw std::runtime_error("file data unexpected size");
+			}
 			fread(typeName, 1, length, file);
 			if (empty)
 			{

@@ -32,7 +32,7 @@ bool CWeapon::Init()
 {
 	CGameObject::Init();
 	m_Mesh = CreateComponent<CAnimationMeshComponent>("Mesh");
-	m_Mesh->SetMesh("SpongebobWand");
+	m_Mesh->SetMesh("SpongebobWeapon");
 	m_Mesh->SetWorldScale(0.5f, 0.5f, 0.5f);
 	return true;
 }
@@ -65,7 +65,7 @@ void CWeapon::Load(FILE* File)
 bool CWeapon::SetMesh(const std::string& Name)
 {
 	bool isMesh = m_Mesh->SetMesh(Name);
-	if(isMesh&&Name=="Lasso")
+	if(isMesh&&Name=="SandyWeapon")
 	{
 		m_Anim = m_Mesh->SetAnimation<CAnimation>("WeaponAnimation");
 		m_Anim->AddAnimation("Lasso_Idle", "Lasso_Idle", 1.f, 1.f, true);
@@ -75,6 +75,7 @@ bool CWeapon::SetMesh(const std::string& Name)
 		m_Anim->SetCurrentEndFunction<CWeapon>("Lasso_End", this, &CWeapon::ResetIdle);
 		m_Anim->AddAnimation("Lasso_Copter", "Lasso_Copter", 1.f, 1.f, true);
 		m_Anim->Start();
+		ResetIdle();
 	}
 	return isMesh;
 }

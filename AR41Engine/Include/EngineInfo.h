@@ -545,6 +545,11 @@ struct OutputBoneInfo
 	Vector3	scale;
 	float	empty2;
 	Vector4 rot;
+	OutputBoneInfo()
+		: empty1(0.f)
+		, empty2(0.f)
+	{
+	}
 };
 
 struct TerrainCBuffer

@@ -243,15 +243,15 @@ void COceanComponent::Load(FILE* file)
 	fread(&m_Grid, sizeof(bool), 1, file);
 	fread(&m_Height, sizeof(float), 1, file);
 	fread(&m_MaxTime, sizeof(float), 1, file);
-	size_t Length = 0;
+	size_t length = 0;
 	char	Name[256] = {};
-	fread(&Length, sizeof(size_t), 1, file);
-	if (Length > MAXCHAR)
+	fread(&length, sizeof(size_t), 1, file);
+	if (length > MAXCHAR)
 	{
 		throw std::runtime_error("file data unexpected size");
 	}
 	//assert(Length < MAXCHAR);
-	fread(Name, 1, Length, file);
+	fread(Name, 1, length, file);
 	m_FileName = Name;
 	TCHAR* t_filename = new TCHAR[m_FileName.size() + 1];
 	t_filename[m_FileName.size()] = 0;

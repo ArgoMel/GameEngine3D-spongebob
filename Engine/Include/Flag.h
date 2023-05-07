@@ -308,8 +308,8 @@ enum class ENpcList // Npc 전체 리스트
 	End
 };
 
-enum class EItemList
-{ // 아이템 전체 리스트
+enum class EItemList	// 아이템 전체 리스트
+{ 
 	GoldenSpatula,
 	ShinyFlower,
 	Sock,

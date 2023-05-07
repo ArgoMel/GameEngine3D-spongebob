@@ -1566,6 +1566,7 @@
     <ClCompile Include="Component\OceanComponent.cpp">
       <Filter>05. Component\01. SceneComponent\01. Primitive\02. 3D\06. Ocean</Filter>
     </ClCompile>
+    <ClCompile Include="Resource\Mesh\fbxsdk\fileio\fbxexporter.cpp" />
   </ItemGroup>
   <ItemGroup>
     <FxCompile Include="..\Bin\Shader\Share.fx">

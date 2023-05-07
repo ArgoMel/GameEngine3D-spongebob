@@ -91,12 +91,10 @@ private:
 	float m_SpaceTime;
 	float m_LassoDistance;
 	void LoadCheck();
+	void LoadAnim();
 	void CollisionCube(const CollisionResult& result);
 	void CollisionTest(const CollisionResult& result);	// 충돌체 테스트 용
 	void CollisionTestOut(const CollisionResult& result);
-	void LoadSpongebobAnim(); // 스폰지밥 리소스
-	void LoadPatrickAnim(); // 뚱이 리소스
-	void LoadSandyAnim(); // 다람이 리소스
 protected:
 	CPlayer();
 	CPlayer(const CPlayer& Obj);
@@ -152,6 +150,7 @@ public:
 		m_PlayerUI->SetGlitter(shinyFlower);
 		IngameUI();
 	}
+	int AddItem(const EItemList& Item, int Count = 1);
 	void SetRespawnPos(const Vector3& vec)
 	{
 		m_RespawnPos = vec;
@@ -193,7 +192,6 @@ public:
 	bool SaveCharacter();
 	bool LoadCharacter();
 
-	int AddItem(const EItemList& Item, int Count = 1);
 	void KeyDown();
 	void MoveFront();
 	void MoveBack();
@@ -225,9 +223,8 @@ public:
 	void Patrick_Throw();
 
 	// Change Charater
-	void ChangeSpongebob();
-	void ChangePatrick();
-	void ChangeSandy();
+	void SetCharName(size_t flag);
+	void ChangeCharacter();
 
 	void DebugF7();
 	void DebugF8();

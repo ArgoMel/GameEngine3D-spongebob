@@ -40,7 +40,7 @@ bool CPatrickObject::Init()
 	m_Mesh->AddChild(m_Body);
 	m_Mesh->AddChild(m_Rigid);
 
-	m_Mesh->SetMesh("Ice");
+	m_Mesh->SetMesh("PatrickWeapon");
 	m_Mesh->SetWorldScale(0.5f,0.5f,0.5f);
 	m_Mesh->SetPivot(0.5f, 0.5f,0.5f);
 

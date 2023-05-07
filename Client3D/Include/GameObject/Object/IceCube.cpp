@@ -37,7 +37,7 @@ bool CIceCube::Init()
 
 	m_Mesh->AddChild(m_Body);
 
-	m_Mesh->SetMesh("Ice");
+	m_Mesh->SetMesh("PatrickWeapon");
 	m_Mesh->SetPivot(0.5f, 0.5f, 0.5f);
 
 	//m_Body->SetCollisionProfile("Collectible");

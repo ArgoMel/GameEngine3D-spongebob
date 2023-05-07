@@ -83,7 +83,7 @@ void CDefaultSetting::CreateCDO()
 
     CScene::CreateObjectCDO<CFodder>("Fodder");
     CScene::CreateObjectCDO<CHammer>("Hammer");
-    CScene::CreateObjectCDO<CDuplicatotron>("Duplicatotron");
+    //CScene::CreateObjectCDO<CDuplicatotron>("Duplicatotron");
     CScene::CreateObjectCDO<CIceCube>("IceCube");
     CScene::CreateObjectCDO<CJumpTree>("JumpTree ");
     CScene::CreateObjectCDO<CTeleportBox>("TeleportBox");
@@ -339,9 +339,9 @@ void CDefaultSetting::LoadSpongebob()
 {
     // Spongebob
     CResourceManager* resourceManager = CResourceManager::GetInst();
-    resourceManager->LoadMesh(nullptr, MeshType::Animation, "SpongebobWand", TEXT("Spongebob\\wand_bubble_wand.msh"));
+    resourceManager->LoadMesh(nullptr, MeshType::Animation, "SpongebobWeapon", TEXT("Spongebob\\wand_bubble_wand.msh"));
     resourceManager->LoadSkeleton(nullptr, "SpongebobWandSkeleton", TEXT("Spongebob\\wand_bubble_wand.bne"), MESH_PATH);
-    resourceManager->SetMeshSkeleton("SpongebobWand", "SpongebobWandSkeleton");
+    resourceManager->SetMeshSkeleton("SpongebobWeapon", "SpongebobWandSkeleton");
 
     resourceManager->LoadMesh(nullptr, MeshType::Animation, "Spongebob", TEXT("Spongebob\\Spongebob_mesh.msh"));
     resourceManager->LoadSkeleton(nullptr, "SpongebobSkeleton", TEXT("Spongebob\\Spongebob_mesh.bne"), MESH_PATH);
@@ -392,9 +392,9 @@ void CDefaultSetting::LoadSpongebob()
 void CDefaultSetting::LoadPatrick()
 {
     CResourceManager* resourceManager = CResourceManager::GetInst();
-    resourceManager->LoadMesh(nullptr, MeshType::Animation, "Ice", TEXT("Objects/JellyfishFields/Ice.msh"), MESH_PATH);
+    resourceManager->LoadMesh(nullptr, MeshType::Animation, "PatrickWeapon", TEXT("Objects/JellyfishFields/Ice.msh"), MESH_PATH);
     resourceManager->LoadSkeleton(nullptr, "IceSkeleton", TEXT("Objects/JellyfishFields/Ice.bne"), MESH_PATH);
-    resourceManager->SetMeshSkeleton("Ice", "IceSkeleton");
+    resourceManager->SetMeshSkeleton("PatrickWeapon", "IceSkeleton");
 
     resourceManager->LoadMesh(nullptr, MeshType::Animation, "Patrick", TEXT("Patrick/Patrick11.msh"), MESH_PATH);
     resourceManager->LoadSkeleton(nullptr, "PatrickSkeleton", TEXT("Patrick/Patrick11.bne"), MESH_PATH);
@@ -403,14 +403,14 @@ void CDefaultSetting::LoadPatrick()
 
     resourceManager->LoadAnimationSequence("Patrick_Idle", TEXT("Patrick/Patrick_Idle.sqc"), MESH_PATH);
     resourceManager->LoadAnimationSequence("Patrick_Walk", TEXT("Patrick/Patrick_Walk.sqc"), MESH_PATH);
-    resourceManager->LoadAnimationSequence("Patrick_BellyAttack", TEXT("Patrick/Patrick_BellyAttack.sqc"), MESH_PATH);
+    resourceManager->LoadAnimationSequence("Patrick_Attack", TEXT("Patrick/Patrick_BellyAttack.sqc"), MESH_PATH);
     //resourceManager->LoadAnimationSequence("Patrick_Run", TEXT("Patrick/Patrick_Run.sqc"), MESH_PATH);
     //resourceManager->LoadAnimationSequence("Patrick_DoubleJump", TEXT("Patrick/Patrick_DoubleJump.sqc"), MESH_PATH);
     resourceManager->LoadAnimationSequence("Patrick_JumpUp", TEXT("Patrick/Patrick_JumpUp.sqc"), MESH_PATH);
     resourceManager->LoadAnimationSequence("Patrick_JumpDw", TEXT("Patrick/Anim_Patrick_Jump_DW.sqc"), MESH_PATH);
-    resourceManager->LoadAnimationSequence("Patrick_SlamStart", TEXT("Patrick/Anim_Patrick_Slam_Start.sqc"), MESH_PATH);
-    resourceManager->LoadAnimationSequence("Patrick_SlamLoop", TEXT("Patrick/Anim_Patrick_Slam_Loop.sqc"), MESH_PATH);
-    resourceManager->LoadAnimationSequence("Patrick_SlamEnd", TEXT("Patrick/Anim_Patrick_Slam_End.sqc"), MESH_PATH);
+    resourceManager->LoadAnimationSequence("Patrick_BashStart", TEXT("Patrick/Anim_Patrick_Slam_Start.sqc"), MESH_PATH);
+    resourceManager->LoadAnimationSequence("Patrick_BashDw", TEXT("Patrick/Anim_Patrick_Slam_Loop.sqc"), MESH_PATH);
+    resourceManager->LoadAnimationSequence("Patrick_Bash", TEXT("Patrick/Anim_Patrick_Slam_End.sqc"), MESH_PATH);
     resourceManager->LoadAnimationSequence("Patrick_Hit", TEXT("Patrick\\anim_patrick_Hit.sqc"), MESH_PATH);
     resourceManager->LoadAnimationSequence("Patrick_Death", TEXT("Patrick\\Anim_Patrick_Death_01.sqc"), MESH_PATH);
 
@@ -432,9 +432,9 @@ void CDefaultSetting::LoadPatrick()
 void CDefaultSetting::LoadSandy()
 {
     CResourceManager* resourceManager = CResourceManager::GetInst();
-    resourceManager->LoadMesh(nullptr, MeshType::Animation, "Lasso", TEXT("Sandy\\Lasso\\Lasso.msh"));
+    resourceManager->LoadMesh(nullptr, MeshType::Animation, "SandyWeapon", TEXT("Sandy\\Lasso\\Lasso.msh"));
     resourceManager->LoadSkeleton(nullptr, "LassoSkeleton", TEXT("Sandy\\Lasso\\Lasso.bne"), MESH_PATH);
-    resourceManager->SetMeshSkeleton("Lasso", "LassoSkeleton");
+    resourceManager->SetMeshSkeleton("SandyWeapon", "LassoSkeleton");
 
     resourceManager->LoadAnimationSequence("Lasso_Idle", TEXT("Sandy\\Lasso\\Anim_lasso_Pose_Straight_Rope.sqc"), MESH_PATH);
     resourceManager->LoadAnimationSequence("Lasso_Start", TEXT("Sandy\\Lasso\\Anim_lasso_attack_start.sqc"), MESH_PATH);
@@ -449,12 +449,10 @@ void CDefaultSetting::LoadSandy()
     resourceManager->LoadAnimationSequence("Sandy_Idle", TEXT("Sandy/Sandy_Idle.sqc"), MESH_PATH);
     resourceManager->LoadAnimationSequence("Sandy_Walk", TEXT("Sandy/Sandy_Walk.sqc"), MESH_PATH);
     resourceManager->LoadAnimationSequence("Sandy_Run", TEXT("Sandy/Sandy_Run.sqc"), MESH_PATH);
-    resourceManager->LoadAnimationSequence("Sandy_JumpDW", TEXT("Sandy/Sandy_JumpDW.sqc"), MESH_PATH);
+    resourceManager->LoadAnimationSequence("Sandy_JumpDw", TEXT("Sandy/Sandy_JumpDW.sqc"), MESH_PATH);
     resourceManager->LoadAnimationSequence("Sandy_JumpUp", TEXT("Sandy/Sandy_JumpUp.sqc"), MESH_PATH);
 
-    //resourceManager->LoadAnimationSequence("Sandy_Jump_Landing_NonAdditive", TEXT("Sandy/Sandy_Jump_Landing_NonAdditive.sqc"), MESH_PATH);
-    //resourceManager->LoadAnimationSequence("Sandy_DoubleJump", TEXT("Sandy/Sandy_DoubleJump.sqc"), MESH_PATH);
-    resourceManager->LoadAnimationSequence("Sandy_Karate_Chop", TEXT("Sandy/Sandy_Karate_Chop.sqc"), MESH_PATH);
+    resourceManager->LoadAnimationSequence("Sandy_Attack", TEXT("Sandy/Sandy_Karate_Chop.sqc"), MESH_PATH);
     resourceManager->LoadAnimationSequence("Sandy_Karate_Kick", TEXT("Sandy/Sandy_Karate_Kick.sqc"), MESH_PATH);
     resourceManager->LoadAnimationSequence("Sandy_Lasso_Start", TEXT("Sandy/Sandy_Lasso_Start.sqc"), MESH_PATH);
     resourceManager->LoadAnimationSequence("Sandy_Death", TEXT("Sandy/Sandy_Death.sqc"), MESH_PATH);
@@ -464,7 +462,6 @@ void CDefaultSetting::LoadSandy()
     resourceManager->LoadSound("Effect", "Sandy_Chop", false, "Sandy/SFX_SC_Chop.ogg", SOUND_PATH); // 주먹질
     resourceManager->LoadSound("Effect", "Sandy_Kick", false, "Sandy/SFX_SC_Kick.ogg", SOUND_PATH); // 발차기
     resourceManager->LoadSound("Effect", "Sandy_Jump", false, "Sandy/SFX_SC_Jump.ogg", SOUND_PATH); // 점프
-    // resourceManager->LoadSound("Effect", "Sandy_DoubleJump", false, "Sandy/SFX_SC_DoubleJump.ogg", SOUND_PATH); // 이단 점프
     resourceManager->LoadSound("Effect", "Sandy_LassoAttack", false, "Sandy/SFX_SC_LassoAttack_Throw.ogg", SOUND_PATH); // 올가미 공격
     resourceManager->LoadSound("Effect", "Sandy_LassoAttack_End", false, "Sandy/SFX_SC_LassoAttack_End.ogg", SOUND_PATH); // 올가미 공격 끝
     resourceManager->LoadSound("Effect", "Sandy_Hovering", true, "Sandy/SFX_SC_Lasso_Copter.ogg");
@@ -631,7 +628,7 @@ void CDefaultSetting::LoadEnemies()
     CResourceManager::GetInst()->LoadMesh(nullptr, MeshType::Static, "HammerDebris4", TEXT("Enemies/Hammer/Hammer_Debris4Mesh.msh"), MESH_PATH);
 
     // Duplicatotron    
-    CResourceManager::GetInst()->LoadMesh(nullptr, MeshType::Animation, "Duplicatotron", TEXT("Enemies/Duplicatotron/DuplicatotronMeshReal.fbx"), MESH_PATH);
+    CResourceManager::GetInst()->LoadMesh(nullptr, MeshType::Animation, "Duplicatotron", TEXT("Enemies/Duplicatotron/DuplicatotronMeshReal.msh"), MESH_PATH);
 
     CResourceManager::GetInst()->LoadSkeleton(nullptr, "DuplicatotronMeshSkeleton", TEXT("Enemies/DuplicatotronMesh/DuplicatotronMeshReal.bne"), MESH_PATH);
 
@@ -832,8 +829,8 @@ void CDefaultSetting::LoadJellyfishFieldsObj()
     CResourceManager::GetInst()->LoadMesh(nullptr, MeshType::Static, "TwoRock", TEXT("Buildings/JellyfishField/TwoRock.msh"), MESH_PATH);
 
     // SM_JF_Teeter_Rock
-    CResourceManager::GetInst()->LoadMesh(nullptr, MeshType::Static, "SM_JF_Teeter_Rock_01", TEXT("Objects/JellyfishFields/SM_JF_Teeter_Rock_01.fbx"));
-    CResourceManager::GetInst()->LoadMesh(nullptr, MeshType::Static, "SM_JF_Teeter_Rock_02", TEXT("Objects/JellyfishFields/SM_JF_Teeter_Rock_02.fbx"));
+    CResourceManager::GetInst()->LoadMesh(nullptr, MeshType::Static, "SM_JF_Teeter_Rock_01", TEXT("Objects/JellyfishFields/SM_JF_Teeter_Rock_01.msh"));
+    CResourceManager::GetInst()->LoadMesh(nullptr, MeshType::Static, "SM_JF_Teeter_Rock_02", TEXT("Objects/JellyfishFields/SM_JF_Teeter_Rock_02.msh"));
 
     // CheckPoint
     CResourceManager::GetInst()->LoadMesh(nullptr, MeshType::Animation, "CheckPointMesh", TEXT("Objects/JellyfishFields/CheckPointMesh.msh"), MESH_PATH);

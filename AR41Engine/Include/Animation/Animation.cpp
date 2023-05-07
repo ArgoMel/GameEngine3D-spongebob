@@ -250,6 +250,10 @@ bool CAnimation::AddAnimation(const std::string& name, const std::string& sequen
 	{
 		sequence = CResourceManager::GetInst()->FindAnimationSequence(sequenceName);
 	}
+	if(!sequence)
+	{
+		return false;
+	}
 	anim = new CAnimationData;
 	anim->m_Sequence = sequence;
 	anim->m_SequenceName = sequenceName;
@@ -406,10 +410,13 @@ void CAnimation::Load(FILE* file)
 		data->Load(file);
 		m_mapAnimation.insert(std::make_pair(data->GetName(), data));
 	}
-	int	length = 0;
-	char	curName[256] = {};
+	size_t	length = 0;
+	char	curName[MAXCHAR] = {};
 	fread(&length, 4, 1, file);
-	assert(length >= 0);
+	if (length > MAXCHAR)
+	{
+		throw std::runtime_error("file data unexpected size");
+	}
 	fread(curName, 1, length, file);
 	m_CurAnimation = FindAnimation(curName);
 }
