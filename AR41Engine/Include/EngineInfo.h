@@ -1,5 +1,6 @@
 #pragma once
 #define	DIRECTINPUT_VERSION	0x0800 //include전에 써야 dxinput이 작동한다 
+#include <iostream> // c++ stadard input output
 #include <Windows.h>
 #include <vector>
 #include <list>
@@ -27,14 +28,19 @@
 #include "fmod.hpp"
 #include "DShow.h"
 #include <time.h>
+#include <thread> //thread
 
 #pragma comment(lib, "strmiids.lib")	//dsshow
 #pragma comment(lib, "dwrite.lib")		//text
 #pragma comment(lib, "d2d1.lib")
 #pragma comment(lib, "../Bin/fmodL_vc.lib")	//fmod
+#pragma comment(lib, "ws2_32.lib") //링커
 
 extern float g_DeltaTime;	//extern을 쓰면 다른 외부파일에서 사용할수 있다
 
+#define _WINSOCK_DEPRECATED_NO_WARNINGS
+#define PORT 8080 
+#define PACKET_SIZE 1024
 #define	GRAVITY	9.8f
 #define	ROOT_PATH		"Root"
 #define	SHADER_PATH		"Shader"
@@ -49,6 +55,7 @@ extern float g_DeltaTime;	//extern을 쓰면 다른 외부파일에서 사용할수 있다
 #define	DIALOG_PATH		"Dialog"
 #define	CHATGPT_PATH		"ChatGPT"
 #define	CUTSCENE_PATH		"Cutscene"
+#define	SERVER_PATH		"Server"
 #define	DEFINITION_SINGLE(type)	type* type::m_Inst = nullptr;
 #define	SAFE_DELETE(p)	if(p)	{ delete p; p = nullptr; }
 #define	SAFE_DELETE_ARRAY(p)	if(p)	{ delete[] p; p = nullptr; }

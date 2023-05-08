@@ -49,6 +49,7 @@ bool CPathManager::Init()
 	AddPath(DIALOG_PATH, TEXT("Dialog\\"));
 	AddPath(CHATGPT_PATH, TEXT("ChatGPT\\"));
 	AddPath(CUTSCENE_PATH, TEXT("Cutscene\\"));
+	AddPath(SERVER_PATH, TEXT("Server\\"));
 	return true;
 }
 

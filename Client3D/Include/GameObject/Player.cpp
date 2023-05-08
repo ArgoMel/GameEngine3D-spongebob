@@ -386,6 +386,61 @@ void CPlayer::LoadCheck()
 	LoadCharacter();
 }
 
+void CPlayer::LoadAnim()
+{
+	size_t size = (size_t)EMain_Character::Max;
+	for (size_t i = 0; i < size; ++i)
+	{
+		SetCharName(i);
+		m_ReserveMesh[i] = CResourceManager::GetInst()->FindMesh(m_Name);
+		if (m_ReserveMesh[i])
+		{
+			m_ReserveMesh[i]->AddRenderCount();
+		}
+		m_Mesh->SetMesh(m_ReserveMesh[i]);
+		m_Anim[i] = m_Mesh->SetAnimation<CAnimation>(m_Name + "Animation");
+		m_Anim[i]->AddAnimation(m_Name + "Idle", m_Name + "_Idle", 1.f, 1.f, true);
+		m_Anim[i]->AddAnimation(m_Name + "Walk", m_Name + "_Walk", 1.f, 1.f, true);
+		m_Anim[i]->AddAnimation(m_Name + "Attack", m_Name + "_Attack", 1.f, 1.f, false);
+		m_Anim[i]->SetCurrentEndFunction<CPlayer>(m_Name + "Attack", this, &CPlayer::ResetIdle);
+		m_Anim[i]->AddAnimation(m_Name + "JumpDw", m_Name + "_JumpDw", 1.f, 1.f, false);
+		m_Anim[i]->AddAnimation(m_Name + "JumpUp", m_Name + "_JumpUp", 1.f, 1.f, false);
+		m_Anim[i]->AddAnimation(m_Name + "BashStart", m_Name + "_BashStart", 1.f, 2.f, false);
+		m_Anim[i]->SetCurrentEndFunction<CPlayer>(m_Name + "BashStart", this, &CPlayer::StartBash);
+		m_Anim[i]->AddAnimation(m_Name + "BashDw", m_Name + "_BashDw", 1.f, 1.f, true);
+		m_Anim[i]->AddAnimation(m_Name + "Bash", m_Name + "_Bash", 1.f, 2.f, false);
+		m_Anim[i]->SetCurrentEndFunction<CPlayer>(m_Name + "Bash", this, &CPlayer::ResetIdle);
+		m_Anim[i]->AddAnimation(m_Name + "Hit", m_Name + "_Hit", 1.f, 1.f, false);
+		m_Anim[i]->SetCurrentEndFunction<CPlayer>(m_Name + "Hit", this, &CPlayer::ResetIdle);
+		m_Anim[i]->AddAnimation(m_Name + "Death", m_Name + "_Death", 1.f, 1.f, false);
+		m_Anim[i]->SetCurrentEndFunction<CPlayer>(m_Name + "Death", this, &CPlayer::Reset);
+		//spongebob
+		m_Anim[i]->AddAnimation("SpongebobBowl", "Spongebob_Bowl", 1.f, 1.f, true);
+		m_Anim[i]->AddAnimation("SpongebobBowlThrow", "Spongebob_BowlThrow", 1.f, 1.f, false);
+		m_Anim[i]->SetCurrentEndFunction<CPlayer>("SpongebobBowlThrow", this, &CPlayer::ResetIdle);
+		m_Anim[i]->AddAnimation("SpongebobMissileStart", "Spongebob_MissileStart", 1.f, 1.f, false);
+		m_Anim[i]->SetCurrentEndFunction<CPlayer>("SpongebobMissileStart", this, &CPlayer::MissileLaunch);
+		m_Anim[i]->AddAnimation("SpongebobMissileLoop", "Spongebob_MissileLoop", 1.f, 1.f, true);
+		m_Anim[i]->AddAnimation("SpongebobMissileEnd", "Spongebob_MissileEnd", 1.f, 1.f, false);
+		m_Anim[i]->SetCurrentEndFunction<CPlayer>("SpongebobMissileEnd", this, &CPlayer::ResetIdle);
+		//patrick
+		m_Anim[i]->AddAnimation("PatrickPickUpIdle", "Patrick_PickUpIdle", 1.f, 1.f, true);
+		m_Anim[i]->AddAnimation("PatrickPickUpWalk", "Patrick_PickUpWalk", 1.f, 1.f, true);
+		m_Anim[i]->AddAnimation("PatrickPickUp", "Patrick_PickUp", 1.f, 1.f, false);
+		m_Anim[i]->AddCurrentNotify<CPlayer>("PatrickPickUp", "PatrickPickUp", 0.6f, this, &CPlayer::Patrick_PickUp);
+		m_Anim[i]->SetCurrentEndFunction<CPlayer>("PatrickPickUp", this, &CPlayer::ResetIdle);
+		m_Anim[i]->AddAnimation("PatrickThrow", "Patrick_Throw", 1.f, 1.f, false);
+		m_Anim[i]->AddCurrentNotify<CPlayer>("PatrickThrow", "PatrickThrow", 0.6f, this, &CPlayer::Patrick_Throw);
+		m_Anim[i]->SetCurrentEndFunction<CPlayer>("PatrickThrow", this, &CPlayer::ResetIdle);
+		//sandy
+		m_Anim[i]->AddAnimation("SandyKick", "Sandy_Karate_Kick", 1.f, 1.f, false);
+		m_Anim[i]->SetCurrentEndFunction<CPlayer>("SandyKick", this, &CPlayer::ResetIdle);
+		m_Anim[i]->AddAnimation("SandyLassoStart", "Sandy_Lasso_Start", 1.f, 1.f, false);
+		m_Anim[i]->SetCurrentEndFunction<CPlayer>("SandyLassoStart", this, &CPlayer::ResetIdle);
+		m_Anim[i]->AddAnimation("SandySwingLoop", "Sandy_Swing_Loop", 1.f, 1.f, true);
+	}
+}
+
 void CPlayer::KeyDown()
 {
 	if (m_IsStop || !m_Rigid->GetGround())
@@ -916,60 +971,5 @@ void CPlayer::CollisionCube(const CollisionResult& result)
 	if(name == "Monster")
 	{
 		result.dest->GetOwner()->InflictDamage();
-	}
-}
-
-void CPlayer::LoadAnim()
-{
-	size_t size = (size_t)EMain_Character::Max;
-	for (size_t i = 0; i < size;++i)
-	{
-		SetCharName(i);
-		m_ReserveMesh[i] = CResourceManager::GetInst()->FindMesh(m_Name);
-		if (m_ReserveMesh[i])
-		{
-			m_ReserveMesh[i]->AddRenderCount();
-		}
-		m_Mesh->SetMesh(m_ReserveMesh[i]);
-		m_Anim[i] = m_Mesh->SetAnimation<CAnimation>(m_Name+"Animation");
-		m_Anim[i]->AddAnimation(m_Name+"Idle", m_Name + "_Idle", 1.f, 1.f, true);
-		m_Anim[i]->AddAnimation(m_Name+"Walk", m_Name + "_Walk", 1.f, 1.f, true);
-		m_Anim[i]->AddAnimation(m_Name+"Attack", m_Name + "_Attack", 1.f, 1.f, false);
-		m_Anim[i]->SetCurrentEndFunction<CPlayer>(m_Name + "Attack", this, &CPlayer::ResetIdle);
-		m_Anim[i]->AddAnimation(m_Name+"JumpDw", m_Name + "_JumpDw", 1.f, 1.f, false);
-		m_Anim[i]->AddAnimation(m_Name+"JumpUp", m_Name + "_JumpUp", 1.f, 1.f, false);
-		m_Anim[i]->AddAnimation(m_Name+"BashStart", m_Name + "_BashStart", 1.f, 2.f, false);
-		m_Anim[i]->SetCurrentEndFunction<CPlayer>(m_Name + "BashStart", this, &CPlayer::StartBash);
-		m_Anim[i]->AddAnimation(m_Name+"BashDw", m_Name + "_BashDw", 1.f, 1.f, true);
-		m_Anim[i]->AddAnimation(m_Name+"Bash", m_Name + "_Bash", 1.f, 2.f, false);
-		m_Anim[i]->SetCurrentEndFunction<CPlayer>(m_Name + "Bash", this, &CPlayer::ResetIdle);
-		m_Anim[i]->AddAnimation(m_Name + "Hit", m_Name + "_Hit", 1.f, 1.f, false);
-		m_Anim[i]->SetCurrentEndFunction<CPlayer>(m_Name + "Hit", this, &CPlayer::ResetIdle);
-		m_Anim[i]->AddAnimation(m_Name + "Death", m_Name + "_Death", 1.f, 1.f, false);
-		m_Anim[i]->SetCurrentEndFunction<CPlayer>(m_Name + "Death", this, &CPlayer::Reset);
-		//spongebob
-		m_Anim[i]->AddAnimation("SpongebobBowl", "Spongebob_Bowl", 1.f, 1.f, true);
-		m_Anim[i]->AddAnimation("SpongebobBowlThrow", "Spongebob_BowlThrow", 1.f, 1.f, false);
-		m_Anim[i]->SetCurrentEndFunction<CPlayer>("SpongebobBowlThrow", this, &CPlayer::ResetIdle);
-		m_Anim[i]->AddAnimation("SpongebobMissileStart", "Spongebob_MissileStart", 1.f, 1.f, false);
-		m_Anim[i]->SetCurrentEndFunction<CPlayer>("SpongebobMissileStart", this, &CPlayer::MissileLaunch);
-		m_Anim[i]->AddAnimation("SpongebobMissileLoop", "Spongebob_MissileLoop", 1.f, 1.f, true);
-		m_Anim[i]->AddAnimation("SpongebobMissileEnd", "Spongebob_MissileEnd", 1.f, 1.f, false);
-		m_Anim[i]->SetCurrentEndFunction<CPlayer>("SpongebobMissileEnd", this, &CPlayer::ResetIdle);
-		//patrick
-		m_Anim[i]->AddAnimation("PatrickPickUpIdle", "Patrick_PickUpIdle", 1.f, 1.f, true);
-		m_Anim[i]->AddAnimation("PatrickPickUpWalk", "Patrick_PickUpWalk", 1.f, 1.f, true);
-		m_Anim[i]->AddAnimation("PatrickPickUp", "Patrick_PickUp", 1.f, 1.f, false);
-		m_Anim[i]->AddCurrentNotify<CPlayer>("PatrickPickUp", "PatrickPickUp", 0.6f, this, &CPlayer::Patrick_PickUp);
-		m_Anim[i]->SetCurrentEndFunction<CPlayer>("PatrickPickUp", this, &CPlayer::ResetIdle);
-		m_Anim[i]->AddAnimation("PatrickThrow", "Patrick_Throw", 1.f, 1.f, false);
-		m_Anim[i]->AddCurrentNotify<CPlayer>("PatrickThrow", "PatrickThrow", 0.6f, this, &CPlayer::Patrick_Throw);
-		m_Anim[i]->SetCurrentEndFunction<CPlayer>("PatrickThrow", this, &CPlayer::ResetIdle);
-		//sandy
-		m_Anim[i]->AddAnimation("SandyKick", "Sandy_Karate_Kick", 1.f, 1.f, false);
-		m_Anim[i]->SetCurrentEndFunction<CPlayer>("SandyKick", this, &CPlayer::ResetIdle);
-		m_Anim[i]->AddAnimation("SandyLassoStart", "Sandy_Lasso_Start", 1.f, 1.f, false);
-		m_Anim[i]->SetCurrentEndFunction<CPlayer>("SandyLassoStart", this, &CPlayer::ResetIdle);
-		m_Anim[i]->AddAnimation("SandySwingLoop", "Sandy_Swing_Loop", 1.f, 1.f, true);
 	}
 }

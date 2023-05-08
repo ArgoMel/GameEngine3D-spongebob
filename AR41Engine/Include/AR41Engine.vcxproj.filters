@@ -335,6 +335,9 @@
     <Filter Include="05. Component\01. SceneComponent\01. Primitive\02. 3D\06. Ocean">
       <UniqueIdentifier>{e9cd98c2-980a-45c7-a765-0862b73caf55}</UniqueIdentifier>
     </Filter>
+    <Filter Include="01. Manager\12. Server">
+      <UniqueIdentifier>{326acd48-e88e-4ae1-9013-ae5a43849e9e}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Engine.h">
@@ -988,6 +991,9 @@
     <ClInclude Include="Component\OceanComponent.h">
       <Filter>05. Component\01. SceneComponent\01. Primitive\02. 3D\06. Ocean</Filter>
     </ClInclude>
+    <ClInclude Include="Server.h">
+      <Filter>01. Manager\12. Server</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Engine.cpp">
@@ -1566,7 +1572,9 @@
     <ClCompile Include="Component\OceanComponent.cpp">
       <Filter>05. Component\01. SceneComponent\01. Primitive\02. 3D\06. Ocean</Filter>
     </ClCompile>
-    <ClCompile Include="Resource\Mesh\fbxsdk\fileio\fbxexporter.cpp" />
+    <ClCompile Include="Server.cpp">
+      <Filter>01. Manager\12. Server</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <FxCompile Include="..\Bin\Shader\Share.fx">

@@ -53,9 +53,6 @@ bool CChatWindow::Init()
 	line = CreateWidget<CEditorSameLine>("Line");
 	button = CreateWidget<CEditorButton>("ÃÊ±âÈ­", 50.f, 26.f);
 	button->SetClickCallback<CChatWindow>(this, &CChatWindow::Clear);
-	//line = CreateWidget<CEditorSameLine>("Line");
-	//button = CreateWidget<CEditorButton>("Send", 50.f, 26.f);
-	//button->SetClickCallback<CChatWindow>(this, &CChatWindow::SendBtnCallback);
 	return true;
 }
 

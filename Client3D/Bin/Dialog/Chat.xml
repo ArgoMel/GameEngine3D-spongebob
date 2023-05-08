@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Dialogs>
+  <Dialog Name="First_Contact">
+    <Context>
+      <Talker>Server</Talker>
+      <Text>Argo의 채팅서버의 오신것을 환영합니다.</Text>
+      <Anim></Anim>
+    </Context>
+  </Dialog>
+</Dialogs>

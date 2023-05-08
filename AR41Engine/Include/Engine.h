@@ -10,6 +10,7 @@ private:
 	static bool		m_EditorMode;
 	static std::function<bool(HWND, UINT, WPARAM, LPARAM)>	m_WndProcFunc;
 	class CTimer* m_Timer;
+	class CServer* m_Server;
 	class CGlobalConstantBuffer* m_GlobalCBuffer;
 	class CStructuredBuffer* m_RandomBuffer;
 	CEngineSetting* m_Setting;
@@ -62,6 +63,7 @@ public:
 		m_TimeScale = scale;
 	}
 	float GetFPS()	const;
+	void SetServerText(const char* name, const char* text);
 	bool GetRender2D()	const
 	{
 		return m_Render2D;

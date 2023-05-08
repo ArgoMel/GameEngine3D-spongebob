@@ -213,7 +213,7 @@ void CDialogUI::SetDialogInfo(EMapList Map, ENpcList Npc)
 	FileName += ".xml";
 
 	CXmlParser* Parser = new CXmlParser;
-	Parser->init(FileName);
+	Parser->ReadFile(FileName);
 
 	int DialCount = Parser->GetDialogCount();
 
