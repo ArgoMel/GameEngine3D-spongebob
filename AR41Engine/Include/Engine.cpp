@@ -1,7 +1,6 @@
 #include "Engine.h"
 #include "Device.h"
 #include "Timer.h"
-#include "Server.h"
 #include "Input.h"
 #include "PathManager.h"
 #include "CollisionManager.h"
@@ -34,11 +33,10 @@ CEngine::CEngine()
 {
     m_Setting = new CEngineSetting;
     m_Timer = new CTimer;
-    m_Server = new CServer;
     m_GlobalCBuffer = new CGlobalConstantBuffer;
     m_RandomBuffer = new CStructuredBuffer;
     _CrtSetDbgFlag(_CRTDBG_ALLOC_MEM_DF | _CRTDBG_LEAK_CHECK_DF);
-    //_CrtSetBreakAlloc(8924);
+    //_CrtSetBreakAlloc(25913462);
     srand((unsigned int)time(0));
     int a=rand();
 }
@@ -62,18 +60,12 @@ CEngine::~CEngine()
     CSkillManager::DestroyInst();
     SAFE_DELETE(m_Setting);
     SAFE_DELETE(m_Timer);
-    SAFE_DELETE(m_Server);
     CDevice::DestroyInst();
 }
 
 float CEngine::GetFPS() const
 {
     return m_Timer->GetFPS();
-}
-
-void CEngine::SetServerText(const char* name, const char* text)
-{
-    m_Server->SetText(name, text);
 }
 
 void CEngine::SetCameraAxisX(const Vector3& axis)
@@ -141,7 +133,6 @@ bool CEngine::Init(HINSTANCE hInst, const TCHAR* title, const TCHAR* className, 
         return false;
     }
     m_Timer->Init();
-    //m_Server->Init();
     m_GlobalCBuffer->Init();
     CTexture* texture = CResourceManager::GetInst()->FindTexture("EngineNoise");
     m_GlobalCBuffer->SetNoiseResolution((float)texture->GetWidth(), (float)texture->GetHeight());
@@ -189,7 +180,6 @@ void CEngine::Exit()
 void CEngine::Logic()
 {
     m_Timer->Update();
-    //m_Server->Update();
     g_DeltaTime = m_Timer->GetDeltaTime()* m_TimeScale;
     m_AccTime += g_DeltaTime;
 

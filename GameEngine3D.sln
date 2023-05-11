@@ -27,7 +27,10 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Client3D", "Client3D\Includ
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "04. Server", "04. Server", "{111856C8-3E76-411A-AB13-799B35B1A788}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Server", "Server\SOCKETSS.vcxproj", "{7318EA9E-7092-4132-9C70-0CF8B9FFBBF8}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Server", "Server\Include\SOCKETSS.vcxproj", "{7318EA9E-7092-4132-9C70-0CF8B9FFBBF8}"
+	ProjectSection(ProjectDependencies) = postProject
+		{2357B26C-19DA-4D62-9E2A-AFD2ED3DC7D9} = {2357B26C-19DA-4D62-9E2A-AFD2ED3DC7D9}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

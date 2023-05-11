@@ -503,9 +503,6 @@
 #include "D:\c++\Directx3D\GameEngine3D\AR41Engine\Include\Scene\SceneViewport.cpp"
 
 
-#include "D:\c++\Directx3D\GameEngine3D\AR41Engine\Include\Server.cpp"
-
-
 #include "D:\c++\Directx3D\GameEngine3D\AR41Engine\Include\SkillManager.cpp"
 
 

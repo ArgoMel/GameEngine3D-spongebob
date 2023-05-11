@@ -79,14 +79,18 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
-    <OutDir>../AR41Engine/Bin/Server</OutDir>
-    <IntDir>BinObj_Debug/</IntDir>
+    <OutDir>../../AR41Editor/Bin/</OutDir>
+    <IntDir>../BinObj_Debug/</IntDir>
     <TargetName>$(ProjectName)_Debug</TargetName>
+    <IncludePath>../../Engine/Include/;../../Engine/Include/Resource/Mesh/;../../Engine/Include/Resource/Mesh/FBXSDK/;$(IncludePath)</IncludePath>
+    <LibraryPath>../Bin/;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
-    <OutDir>../AR41Engine/Bin/Server/</OutDir>
-    <IntDir>BinObj/</IntDir>
+    <OutDir>../../AR41Editor/Bin/</OutDir>
+    <IntDir>../BinObj/</IntDir>
+    <IncludePath>../../Engine/Include/;../../Engine/Include/Resource/Mesh/;../../Engine/Include/Resource/Mesh/FBXSDK/;$(IncludePath)</IncludePath>
+    <LibraryPath>../Bin/;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -155,6 +159,10 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Server.h" />
+    <ClInclude Include="ServerInfo.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\ServerCopy.bat" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

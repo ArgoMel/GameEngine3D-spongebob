@@ -2,16 +2,16 @@
 //#include <winsock2.h> // winsock
 
 CServer::CServer()
-	: clientaddr{0}
+	: clientaddr{ 0 }
 	, clientsize(sizeof clientaddr)
 	, number(-1)
 {
-	
+
 }
 
 CServer::~CServer()
 {
-	
+
 }
 
 void CServer::Init()
@@ -29,7 +29,20 @@ void CServer::Init()
 	bind(server, (SOCKADDR*)&addr, sizeof addr);
 	listen(server, SOMAXCONN);
 
-	std::thread(&CServer::ACCEPT,this, std::ref(server)).detach();
+	std::thread(&CServer::ACCEPT, this, std::ref(server)).detach();
+
+	while(true)
+	{
+		for (size_t i = 0; i < Client.size(); i++)
+		{
+			if (!strcmp(Client[i].second.c_str(), m_Name))
+			{
+				send(Client[i].first.client, m_Message, sizeof m_Message, 0);
+			}
+		}
+		ZeroMemory(m_Name, sizeof m_Name);
+		ZeroMemory(m_Message, sizeof m_Message);
+	}
 }
 
 void CServer::SetText(const char* name, const char* text)
@@ -44,14 +57,13 @@ void CServer::SetText(const char* name, const char* text)
 	//MultiByteToWideChar(CP_ACP, 0, text, -1, m_wText, length);
 	//length = WideCharToMultiByte(CP_UTF8, 0, m_wText, -1, nullptr, 0, nullptr, nullptr);
 	//WideCharToMultiByte(CP_UTF8, 0, m_wText, -1, m_TextUTF8, length, nullptr, nullptr);
-}
-
-void CServer::Update()
-{
 	for (size_t i = 0; i < Client.size(); i++)
 	{
 		if (!strcmp(Client[i].second.c_str(), m_Name))
 		{
+			CXmlParser* parser = new CXmlParser;
+			parser->AddFile(m_Message);
+			SAFE_DELETE(parser)
 			send(Client[i].first.client, m_Message, sizeof m_Message, 0);
 		}
 	}
@@ -82,7 +94,15 @@ void CServer::ACCEPT(SOCKET& s)
 		Client.push_back(pii(CServer(), ""));
 		Client[cnt].first.client = accept(s, (SOCKADDR*)&Client[cnt].first.clientaddr, &Client[cnt].first.clientsize);
 		Client[cnt].first.number = cnt;
-		std::thread(&CServer::recvData,this, Client[cnt].first.client, cnt).detach();
+		std::thread(&CServer::recvData, this, Client[cnt].first.client, cnt).detach();
 		cnt += 1;
 	}
+}
+
+int main()
+{
+	CServer* server = new CServer;
+	server->Init();
+	SAFE_DELETE(server)
+	return 0;
 }

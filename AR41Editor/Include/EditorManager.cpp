@@ -57,6 +57,7 @@ bool CEditorManager::Init(HINSTANCE hInst)
     CSceneManager::GetInst()->CreateSceneInfo<CEditorDefaultScene>();
 
     WindowOnOff();
+    WindowOnOff();
     CInput::GetInst()->AddBindFunction<CEditorManager>
         ("CtrlShiftC", Input_Type::Down, this, &CEditorManager::ChatGPT, CSceneManager::GetInst()->GetScene());
     CInput::GetInst()->AddBindFunction<CEditorManager>

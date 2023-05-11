@@ -55,6 +55,7 @@ extern float g_DeltaTime;	//extern을 쓰면 다른 외부파일에서 사용할수 있다
 #define	DIALOG_PATH		"Dialog"
 #define	CHATGPT_PATH		"ChatGPT"
 #define	CUTSCENE_PATH		"Cutscene"
+#define	SERVER_PATH		"Server"
 #define	DEFINITION_SINGLE(type)	type* type::m_Inst = nullptr;
 #define	SAFE_DELETE(p)	if(p)	{ delete p; p = nullptr; }
 #define	SAFE_DELETE_ARRAY(p)	if(p)	{ delete[] p; p = nullptr; }

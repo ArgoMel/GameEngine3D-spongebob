@@ -1,10 +1,10 @@
 #pragma once
-#include "EngineInfo.h"
+#include "ServerInfo.h"
 #include "UI/RapidXml/CXmlParser.h"
 
 class CServer
 {
-private:
+public:
 	typedef std::pair<CServer, std::string> pii;
 	SOCKET client;
 	SOCKADDR_IN clientaddr;
@@ -18,7 +18,6 @@ public:
 	CServer();
 	~CServer();
 	void Init();
-	void Update();
 	void recvData(SOCKET s, int num);
 	void ACCEPT(SOCKET& s);
 	void SetText(const char* name, const char* text);

@@ -370,7 +370,6 @@
     <ClInclude Include="Scene\SceneManager.h" />
     <ClInclude Include="Scene\SceneResource.h" />
     <ClInclude Include="Scene\SceneViewport.h" />
-    <ClInclude Include="Server.h" />
     <ClInclude Include="SharedPtr.h" />
     <ClInclude Include="SkillManager.h" />
     <ClInclude Include="Thread\DataStream.h" />
@@ -571,7 +570,6 @@
     <ClCompile Include="Scene\SceneManager.cpp" />
     <ClCompile Include="Scene\SceneResource.cpp" />
     <ClCompile Include="Scene\SceneViewport.cpp" />
-    <ClCompile Include="Server.cpp" />
     <ClCompile Include="SkillManager.cpp" />
     <ClCompile Include="Thread\DataStream.cpp" />
     <ClCompile Include="Thread\LoadingThread.cpp" />
